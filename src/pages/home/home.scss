@@ -1,2 +1,8 @@
 page-home {
+  ion-footer {
+    background: color($theming, dark, bg) !important;
+  }
+  ion-icon {
+    color: color($theming, dark, text);
+  }
 }

@@ -1,8 +1,30 @@
-toolbar-component {
-  background-color: #212121;
+.toolbar-component {
+  ion-item {
+    background-color: transparent !important;
+    border: none !important;
+  }
+  .toolbar-background {
+    background: transparent;
+  }
 }
 
-ion-item {
-  background-color: transparent !important;
-  border: none !important;
+.toolbar-play-fab {
+  background: color($theming, primary, base);
+  border-radius: 50%;
+  padding: 10px;
+  left: 50% !important;
+  margin-left: -38px !important;
+  bottom: 57px !important;
+  margin-bottom: -38px;
+
+  ion-icon {
+    color: color($theming, primary, dark);
+  }
+
+  .fab {
+    background: color($colors, light);
+  }
 }
+
+
+

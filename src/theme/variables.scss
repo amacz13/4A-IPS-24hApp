@@ -41,6 +41,16 @@ $colors: (
   dark:       #222
 );
 
+$theming: (
+  dark: (
+    bg:   #4A4A4A,
+    text: #fff
+  ),
+  primary: (
+    dark: #E85241,
+    base: #E98320
+  )
+);
 
 // App iOS Variables
 // --------------------------------------------------
