@@ -12,4 +12,8 @@ page-multiplayer-selection {
     border-radius: 1em !important;
   }
 
+  ion-icon {
+    color: color($theming, primary, dark);
+  }
+
 }
