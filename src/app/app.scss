@@ -19,3 +19,10 @@
 ion-content {
   background-color: color($theming, primary, base) !important;
 }
+
+ion-footer {
+  background: color($theming, dark, bg) !important;
+}
+ion-icon {
+  color: color($theming, dark, text);
+}

@@ -1,10 +1,4 @@
 page-home {
-  ion-footer {
-    background: color($theming, dark, bg) !important;
-  }
-  ion-icon {
-    color: color($theming, dark, text);
-  }
   .logo-img {
     margin: 15%;
     width: 70%;
@@ -15,7 +9,14 @@ page-home {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 20vh;
+
+    ion-buttons {
+      background: color($colors, light);
+      padding: 10px;
+      border-radius: 10px;
+    }
   }
 }
