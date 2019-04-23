@@ -1,14 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
+import {ChooseCategoryPage} from '../choose-category/choose-category';
 
-/**
- * Generated class for the MultiplayerSelectionPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-@IonicPage()
 @Component({
   selector: 'page-multiplayer-selection',
   templateUrl: 'multiplayer-selection.html',
@@ -20,5 +13,9 @@ export class MultiplayerSelectionPage {
 
   search($event: UIEvent) {
     console.log($event);
+  }
+
+  goToCategories() {
+    this.navCtrl.push(ChooseCategoryPage);
   }
 }

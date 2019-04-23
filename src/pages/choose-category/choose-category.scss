@@ -1,0 +1,25 @@
+page-choose-category {
+
+  ion-content {
+    background-color: #E98320 !important;
+  }
+
+  .searchbar-input {
+    border-radius: 5em !important;
+  }
+
+  ion-card {
+    border-radius: 1em !important;
+  }
+
+  ion-icon {
+    color: color($theming, primary, dark);
+  }
+
+  img {
+    height: 75px;
+    width: 75px;
+    margin: 0 10px 0 0 !important;
+  }
+
+}

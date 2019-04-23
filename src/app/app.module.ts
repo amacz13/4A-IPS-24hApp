@@ -8,12 +8,14 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {ComponentsModule} from "../components/components.module";
 import {MultiplayerSelectionPage} from '../pages/multiplayer-selection/multiplayer-selection';
+import {ChooseCategoryPage} from '../pages/choose-category/choose-category';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    MultiplayerSelectionPage
+    MultiplayerSelectionPage,
+    ChooseCategoryPage
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,8 @@ import {MultiplayerSelectionPage} from '../pages/multiplayer-selection/multiplay
   entryComponents: [
     MyApp,
     HomePage,
-    MultiplayerSelectionPage
+    MultiplayerSelectionPage,
+    ChooseCategoryPage
   ],
   providers: [
     StatusBar,

@@ -2,7 +2,7 @@
 
   <ion-searchbar (ionInput)="search($event)"></ion-searchbar>
 
-  <h2>Favoris</h2>
+  <h2>Catégories</h2>
 
   <ion-card>
     <ion-item>
@@ -17,8 +17,16 @@
     </ion-item>
   </ion-card>
 
+  <ion-card>
+    <ion-item no-padding>
+      <img item-start src="assets/imgs/category_cook.png">
+      <h2>Cuisine</h2>
+      <ion-badge item-end>26 quiz</ion-badge>
+    </ion-item>
+  </ion-card>
+
   <ion-fab right bottom>
-    <button (click)="goToCategories()" ion-fab color="light"><ion-icon name="arrow-forward"></ion-icon></button>
+    <button ion-fab color="light"><ion-icon name="arrow-forward"></ion-icon></button>
   </ion-fab>
 
 </ion-content>
