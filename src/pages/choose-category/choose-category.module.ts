@@ -9,5 +9,8 @@ import { ChooseCategoryPage } from './choose-category';
   imports: [
     IonicPageModule.forChild(ChooseCategoryPage),
   ],
+  exports: [
+    MultiplayerSelectionPage
+  ]
 })
 export class ChooseCategoryPageModule {}

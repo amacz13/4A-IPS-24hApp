@@ -9,7 +9,7 @@
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
-    "serve lab": "ionic serve --lab",
+    "serve lab": "ionic serve --lab --livereload",
     "run android lr": "ionic cordova run android -livereload"
   },
   "dependencies": {

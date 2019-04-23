@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {NavController} from "ionic-angular";
 
 /**
  * Generated class for the ToolbarComponent component.
@@ -14,9 +15,10 @@ export class ToolbarComponent {
 
   text: string;
 
-  constructor() {
-    console.log('Hello ToolbarComponent Component');
-    this.text = 'Hello World';
+  constructor(private navCtrl: NavController) {
   }
 
+  push(page: string): void {
+    this.navCtrl.push(page);
+  }
 }
