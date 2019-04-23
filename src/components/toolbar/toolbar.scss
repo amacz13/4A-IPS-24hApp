@@ -2,6 +2,10 @@
   ion-item {
     background-color: transparent !important;
     border: none !important;
+
+    ion-icon {
+      margin: 0 8px !important;
+    }
   }
   .toolbar-background {
     background: transparent;

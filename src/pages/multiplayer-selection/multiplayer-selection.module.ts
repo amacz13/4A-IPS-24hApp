@@ -11,5 +11,8 @@ import {ComponentsModule} from '../../components/components.module';
     IonicPageModule.forChild(MultiplayerSelectionPage),
     ComponentsModule,
   ],
+  exports: [
+    MultiplayerSelectionPage
+  ]
 })
 export class MultiplayerSelectionPageModule {}

@@ -1,19 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import {IonicApp, IonicErrorHandler, IonicModule, IonicPageModule} from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {ComponentsModule} from "../components/components.module";
-import {MultiplayerSelectionPage} from '../pages/multiplayer-selection/multiplayer-selection';
+import {MultiplayerSelectionPageModule} from "../pages/multiplayer-selection/multiplayer-selection.module";
+import {AvatarPageModule} from "../pages/avatar/avatar.module";
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    MultiplayerSelectionPage
+    HomePage
   ],
   imports: [
     BrowserModule,
@@ -23,13 +23,14 @@ import {MultiplayerSelectionPage} from '../pages/multiplayer-selection/multiplay
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    MultiplayerSelectionPage
+    HomePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    MultiplayerSelectionPageModule,
+    AvatarPageModule
   ]
 })
 export class AppModule {}
