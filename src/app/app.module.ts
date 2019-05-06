@@ -11,6 +11,8 @@ import {MultiplayerSelectionPage} from '../pages/multiplayer-selection/multiplay
 import {ChooseCategoryPage} from '../pages/choose-category/choose-category';
 import {AvatarPageModule} from "../pages/avatar/avatar.module";
 import {ChooseQuizPage} from '../pages/choose-quiz/choose-quiz';
+import {QuestionReadingPage} from '../pages/question-reading/question-reading';
+import {QuestionAnswerPage} from '../pages/question-answer/question-answer';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import {ChooseQuizPage} from '../pages/choose-quiz/choose-quiz';
     HomePage,
     MultiplayerSelectionPage,
     ChooseCategoryPage,
-    ChooseQuizPage
+    ChooseQuizPage,
+    QuestionReadingPage,
+    QuestionAnswerPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,9 @@ import {ChooseQuizPage} from '../pages/choose-quiz/choose-quiz';
     HomePage,
     MultiplayerSelectionPage,
     ChooseCategoryPage,
-    ChooseQuizPage
+    ChooseQuizPage,
+    QuestionReadingPage,
+    QuestionAnswerPage
   ],
   providers: [
     StatusBar,

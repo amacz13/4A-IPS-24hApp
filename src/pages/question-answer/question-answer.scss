@@ -1,0 +1,74 @@
+page-question-answer {
+  ion-content {
+    height: 100% !important;
+  }
+
+  .page-title {
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 1em !important;
+  }
+
+  ion-grid {
+    height: 100%;
+  }
+
+  ion-card {
+    border-radius: 0.5em !important;
+
+    ion-grid {
+      padding: 0 !important;
+    }
+
+    h1 {
+      padding: 1.5em;
+      font-family: "Roboto", "Helvetica Neue", sans-serif;
+      font-weight: lighter !important;
+      text-align: left !important;
+      font-size: 23px !important;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 30%;
+  }
+
+  .answer {
+    height: 30%;
+  }
+
+  .bonus {
+    height: 20%;
+  }
+
+  ion-icon {
+    &[class*="custom-"] {
+      mask-size: contain;
+      mask-position: 50% 50%;
+      mask-repeat: no-repeat;
+      background: currentColor;
+      width: 1em;
+      height: 1em;
+    }
+
+    &[class*="custom-translate"] {
+      mask-image: url(../assets/icon-translate.svg);
+    }
+  }
+
+  .green-line {
+    height: 10px;
+    width: 100%;
+    display: block;
+    color: #28EB7D;
+    background-color: #28EB7D;
+  }
+
+}

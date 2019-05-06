@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {QuestionReadingPage} from '../question-reading/question-reading';
+import {QuestionAnswerPage} from '../question-answer/question-answer';
 
 /**
  * Generated class for the ChooseQuizPage page.
@@ -24,5 +26,10 @@ export class ChooseQuizPage {
 
   search($event: UIEvent) {
     
+  }
+
+  goToQuestion() {
+    setTimeout(() => this.navCtrl.push(QuestionAnswerPage), 5000);
+    this.navCtrl.push(QuestionReadingPage);
   }
 }
