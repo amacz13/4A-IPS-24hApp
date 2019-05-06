@@ -16,8 +16,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'avatar.html',
 })
 export class AvatarPage {
+  accessories = [
+      {img: "assets/imgs/avatar/1hat/Hat.png"},
+      {img: "assets/imgs/avatar/2hair/a.png"}
+    ];
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    for (let accessory of this.accessories) {
+      console.log(accessory);
+    }
+
   }
 
 }

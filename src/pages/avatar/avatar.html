@@ -1,7 +1,17 @@
 <ion-content padding>
+  <ion-row>
+    <ion-col>
+      <button ion-button
+              *ngFor="let acc of accessories"
+              color="light">
+        <img [src]="acc.img" width="64">
+      </button>
+    </ion-col>
 
+    <ion-col>
 
-
+    </ion-col>
+  </ion-row>
 </ion-content>
 
 
