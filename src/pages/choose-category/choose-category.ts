@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {ChooseQuizPage} from '../choose-quiz/choose-quiz';
 
 @Component({
   selector: 'page-choose-category',
@@ -16,5 +17,9 @@ export class ChooseCategoryPage {
 
   search($event: UIEvent) {
     console.log($event);
+  }
+
+  goToQuizSelection() {
+    this.navCtrl.push(ChooseQuizPage);
   }
 }

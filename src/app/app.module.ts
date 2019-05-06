@@ -10,13 +10,15 @@ import {ComponentsModule} from "../components/components.module";
 import {MultiplayerSelectionPage} from '../pages/multiplayer-selection/multiplayer-selection';
 import {ChooseCategoryPage} from '../pages/choose-category/choose-category';
 import {AvatarPageModule} from "../pages/avatar/avatar.module";
+import {ChooseQuizPage} from '../pages/choose-quiz/choose-quiz';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     MultiplayerSelectionPage,
-    ChooseCategoryPage
+    ChooseCategoryPage,
+    ChooseQuizPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import {AvatarPageModule} from "../pages/avatar/avatar.module";
     MyApp,
     HomePage,
     MultiplayerSelectionPage,
-    ChooseCategoryPage
+    ChooseCategoryPage,
+    ChooseQuizPage
   ],
   providers: [
     StatusBar,

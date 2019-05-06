@@ -4,8 +4,7 @@
 
   <h2>Catégories</h2>
 
-  <ion-card>
-    <div class="triangle"></div>
+  <ion-card (click)="goToQuizSelection()">
     <ion-item no-padding>
       <img item-start src="assets/imgs/category_cook.png">
       <h2>Cuisine</h2>
@@ -13,32 +12,40 @@
     </ion-item>
   </ion-card>
 
-  <ion-card>
+  <ion-card (click)="goToQuizSelection()">
     <ion-item no-padding>
-      <img item-start src="assets/imgs/category_cook.png">
-      <h2>Cuisine</h2>
-      <ion-badge item-end>26 quiz</ion-badge>
+      <img item-start src="assets/imgs/category_gaming.png">
+      <h2>Gaming</h2>
+      <ion-badge item-end>18 quiz</ion-badge>
     </ion-item>
   </ion-card>
 
-  <ion-card>
+  <ion-card (click)="goToQuizSelection()">
     <ion-item no-padding>
-      <img item-start src="assets/imgs/category_cook.png">
-      <h2>Cuisine</h2>
-      <ion-badge item-end>26 quiz</ion-badge>
+      <img item-start src="assets/imgs/category_photo.png">
+      <h2>Photographie</h2>
+      <ion-badge item-end>12 quiz</ion-badge>
     </ion-item>
   </ion-card>
 
-  <ion-card>
+  <ion-card (click)="goToQuizSelection()">
     <ion-item no-padding>
-      <img item-start src="assets/imgs/category_cook.png">
-      <h2>Cuisine</h2>
-      <ion-badge item-end>26 quiz</ion-badge>
+      <img item-start src="assets/imgs/category_music.png">
+      <h2>Musique</h2>
+      <ion-badge item-end>78 quiz</ion-badge>
+    </ion-item>
+  </ion-card>
+
+  <ion-card (click)="goToQuizSelection()">
+    <ion-item no-padding>
+      <img item-start src="assets/imgs/category_jokes.png">
+      <h2>Blagues de Papa</h2>
+      <ion-badge item-end>46 quiz</ion-badge>
     </ion-item>
   </ion-card>
 
   <ion-fab right bottom>
-    <button ion-fab color="light"><ion-icon name="arrow-forward"></ion-icon></button>
+    <button ion-fab color="light" (click)="goToQuizSelection()"><ion-icon name="shuffle"></ion-icon></button>
   </ion-fab>
 
 </ion-content>
