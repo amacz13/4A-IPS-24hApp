@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Output} from '@angular/core';
 import {NavController} from "ionic-angular";
+import {AvatarPage} from "../../pages/avatar/avatar";
 
 /**
  * Generated class for the ToolbarComponent component.
@@ -20,9 +21,8 @@ export class ToolbarComponent {
     this.menu = new EventEmitter();
   }
 
-  push(page: string): void {
-    console.log('push page : ', page);
-    this.navCtrl.push(page);
+  goToAvatar(): void {
+    this.navCtrl.push(AvatarPage);
   }
 
   play(): void {
