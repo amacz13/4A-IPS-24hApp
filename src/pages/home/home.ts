@@ -4,9 +4,11 @@ import {MultiplayerSelectionPage} from '../multiplayer-selection/multiplayer-sel
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
 })
 export class HomePage {
+
+  menuOpen: boolean = false;
 
   //TODO: solo and multijoueurs buttons activated only when clicking on "play" button
 

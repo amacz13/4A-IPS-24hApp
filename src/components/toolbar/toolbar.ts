@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 import {NavController} from "ionic-angular";
 
 /**
@@ -14,11 +14,18 @@ import {NavController} from "ionic-angular";
 export class ToolbarComponent {
 
   text: string;
+  @Output() menu : EventEmitter<boolean>;
 
   constructor(private navCtrl: NavController) {
+    this.menu = new EventEmitter();
   }
 
   push(page: string): void {
+    console.log('push page : ', page);
     this.navCtrl.push(page);
+  }
+
+  play(): void {
+    this.menu.emit(true);
   }
 }

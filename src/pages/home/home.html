@@ -3,17 +3,14 @@
   <img class="logo-img" src="assets/imgs/logo.png">
 
   <div class="buttons">
-    <button>SOLO</button>
-<<<<<<< HEAD
-    <button (click)="goMultiplayer()">MULTIJOUEUR</button>
-=======
-    <button (click)="push('page-multiplayer-selection')">MULTIJOUEUR</button>
->>>>>>> master
+    <button *ngIf="menuOpen">SOLO</button>
+<!--    <button (click)="goMultiplayer()">MULTIJOUEUR</button>-->
+    <button *ngIf="menuOpen" (click)="push('page-multiplayer-selection')">MULTIJOUEUR</button>
   </div>
 
 </ion-content>
 
 <ion-footer>
-  <toolbar-component></toolbar-component>
+  <toolbar-component (menu)="menuOpen = !menuOpen"></toolbar-component>
 </ion-footer>
 
