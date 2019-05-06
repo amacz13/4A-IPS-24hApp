@@ -9,7 +9,15 @@
 </ion-toolbar>
 
 <ion-fab bottom center class="toolbar-play-fab">
-  <button ion-fab icon-only (click)="play()">
+  <button ion-fab icon-only>
     <ion-icon name="play"></ion-icon>
   </button>
+  <ion-fab-list side="top" class="buttons">
+    <button ion-button round color="light" (click)="goMultiplayer()">
+      MULTIJOUEUR
+    </button>
+    <button ion-button round color="light" >
+      SOLO
+    </button>
+  </ion-fab-list>
 </ion-fab>

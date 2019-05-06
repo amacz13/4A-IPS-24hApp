@@ -21,8 +21,31 @@
   bottom: 57px !important;
   margin-bottom: -38px;
 
+  .fab-close-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  ion-fab-list {
+    left: -50%;
+    padding-bottom: 5px;
+
+    button {
+      margin-bottom: 15px;
+    }
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+
   ion-icon {
     color: color($theming, primary, dark);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
   .fab {

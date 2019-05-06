@@ -12,13 +12,7 @@ export class HomePage {
 
   //TODO: solo and multijoueurs buttons activated only when clicking on "play" button
 
-  constructor(public navCtrl: NavController) {
-
-  }
-
-  goMultiplayer() {
-    this.navCtrl.push(MultiplayerSelectionPage);
-  }
+  constructor(public navCtrl: NavController) {}
 
   push(page: string): void {
     this.navCtrl.push(page);

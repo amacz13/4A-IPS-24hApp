@@ -1,6 +1,7 @@
 import {Component, EventEmitter, Output} from '@angular/core';
 import {NavController} from "ionic-angular";
 import {AvatarPage} from "../../pages/avatar/avatar";
+import {MultiplayerSelectionPage} from "../../pages/multiplayer-selection/multiplayer-selection";
 
 /**
  * Generated class for the ToolbarComponent component.
@@ -14,18 +15,17 @@ import {AvatarPage} from "../../pages/avatar/avatar";
 })
 export class ToolbarComponent {
 
+  menuOpen: boolean = false;
+
   text: string;
-  @Output() menu : EventEmitter<boolean>;
 
   constructor(private navCtrl: NavController) {
-    this.menu = new EventEmitter();
   }
 
   goToAvatar(): void {
     this.navCtrl.push(AvatarPage);
   }
-
-  play(): void {
-    this.menu.emit(true);
+  goMultiplayer() {
+    this.navCtrl.push(MultiplayerSelectionPage);
   }
 }
