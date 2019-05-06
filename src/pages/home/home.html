@@ -1,15 +1,9 @@
 
 <ion-content padding>
   <img class="logo-img" src="assets/imgs/logo.png">
-
-  <div class="buttons">
-    <button *ngIf="menuOpen">SOLO</button>
-    <button *ngIf="menuOpen" (click)="goMultiplayer()">MULTIJOUEUR</button>
-  </div>
-
 </ion-content>
 
 <ion-footer>
-  <toolbar-component (menu)="menuOpen = !menuOpen"></toolbar-component>
+  <toolbar-component></toolbar-component>
 </ion-footer>
 
