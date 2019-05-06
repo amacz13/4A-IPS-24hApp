@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Output} from '@angular/core';
+import {Component} from '@angular/core';
 import {NavController} from "ionic-angular";
 import {AvatarPage} from "../../pages/avatar/avatar";
 import {MultiplayerSelectionPage} from "../../pages/multiplayer-selection/multiplayer-selection";

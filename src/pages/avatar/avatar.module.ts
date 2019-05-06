@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { AvatarPage } from './avatar';
+import {ComponentsModule} from "../../components/components.module";
 
 @NgModule({
   declarations: [
@@ -8,9 +9,9 @@ import { AvatarPage } from './avatar';
   ],
   imports: [
     IonicPageModule.forChild(AvatarPage),
+    ComponentsModule,
   ],
   exports: [
-    AvatarPage
   ]
 })
 export class AvatarPageModule {}
