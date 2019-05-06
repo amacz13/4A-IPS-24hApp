@@ -4,10 +4,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 @Component({
   templateUrl: 'app.html'
 })

@@ -9,7 +9,6 @@ import { HomePage } from '../pages/home/home';
 import {ComponentsModule} from "../components/components.module";
 import {MultiplayerSelectionPage} from '../pages/multiplayer-selection/multiplayer-selection';
 import {ChooseCategoryPage} from '../pages/choose-category/choose-category';
-import {MultiplayerSelectionPageModule} from "../pages/multiplayer-selection/multiplayer-selection.module";
 import {AvatarPageModule} from "../pages/avatar/avatar.module";
 
 @NgModule({
@@ -35,7 +34,6 @@ import {AvatarPageModule} from "../pages/avatar/avatar.module";
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    MultiplayerSelectionPageModule,
     AvatarPageModule
   ]
 })
