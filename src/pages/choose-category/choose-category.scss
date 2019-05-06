@@ -22,4 +22,12 @@ page-choose-category {
     margin: 0 10px 0 0 !important;
   }
 
+  .triangle {
+    float:right;
+    display: inline-block;
+    height : 0;
+    width : 0;
+    border-top : 150px solid red;
+    border-left : 150px solid transparent;
+  }
 }
