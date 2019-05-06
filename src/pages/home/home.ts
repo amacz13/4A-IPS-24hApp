@@ -14,12 +14,11 @@ export class HomePage {
 
   }
 
-<<<<<<< HEAD
   goMultiplayer() {
     this.navCtrl.push(MultiplayerSelectionPage);
-=======
+  }
+
   push(page: string): void {
     this.navCtrl.push(page);
->>>>>>> master
   }
 }

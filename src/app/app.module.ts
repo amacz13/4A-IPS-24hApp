@@ -7,24 +7,17 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {ComponentsModule} from "../components/components.module";
-<<<<<<< HEAD
 import {MultiplayerSelectionPage} from '../pages/multiplayer-selection/multiplayer-selection';
 import {ChooseCategoryPage} from '../pages/choose-category/choose-category';
-=======
 import {MultiplayerSelectionPageModule} from "../pages/multiplayer-selection/multiplayer-selection.module";
 import {AvatarPageModule} from "../pages/avatar/avatar.module";
->>>>>>> master
 
 @NgModule({
   declarations: [
     MyApp,
-<<<<<<< HEAD
     HomePage,
     MultiplayerSelectionPage,
     ChooseCategoryPage
-=======
-    HomePage
->>>>>>> master
   ],
   imports: [
     BrowserModule,
@@ -34,13 +27,9 @@ import {AvatarPageModule} from "../pages/avatar/avatar.module";
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-<<<<<<< HEAD
     HomePage,
     MultiplayerSelectionPage,
     ChooseCategoryPage
-=======
-    HomePage
->>>>>>> master
   ],
   providers: [
     StatusBar,
