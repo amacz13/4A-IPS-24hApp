@@ -18,13 +18,15 @@ page-question-answer {
 
   ion-card {
     border-radius: 0.5em !important;
+    padding: 0 !important;
 
-    ion-grid {
+    .grid {
       padding: 0 !important;
+      position: relative;
     }
 
     h1 {
-      padding: 1.5em;
+      padding: 1em;
       font-family: "Roboto", "Helvetica Neue", sans-serif;
       font-weight: lighter !important;
       text-align: left !important;
@@ -45,7 +47,12 @@ page-question-answer {
   }
 
   .bonus {
-    height: 20%;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
   ion-icon {
@@ -67,7 +74,55 @@ page-question-answer {
     height: 10px;
     width: 100%;
     display: block;
+    position: absolute;
+    bottom: 0;
     color: #28EB7D;
+    background-color: #28EB7D;
+  }
+
+  .answergrid {
+    padding: 0 !important;
+  }
+
+  .questioncount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5em;
+
+    span {
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+  }
+
+  .btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .answerbtn {
+    height: 6em;
+    margin: 0.5em;
+    width: 45%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+
+    h3 {
+      padding: 0.2em;
+      width: 100%;
+      text-align: center;
+      vertical-align: center;
+    }
+  }
+
+  .goodAnswer {
     background-color: #28EB7D;
   }
 

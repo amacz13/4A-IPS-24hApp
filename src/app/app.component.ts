@@ -9,9 +9,9 @@ import {AvatarPage} from "../pages/avatar/avatar";
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = AvatarPage;
+  // rootPage:any = AvatarPage;
   //TODO: Uncomment following line
-  // rootPage:any = HomePage;
+  rootPage:any = HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
