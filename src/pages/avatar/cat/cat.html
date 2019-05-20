@@ -2,13 +2,10 @@
   <ion-row>
     <ion-col>
       <button ion-button
-              *ngFor="let i of nbCats"
-              (click)="show(cats.get(i).cat)"
+              *ngFor="let e of elements"
               color="light">
-        {{i}}
-        {{this.cats.get(i).isNew}}
-        <img [src]="cats.get(i).img" width="64">
-        <div class="blue-corner" *ngIf="this.cats.get(i).isNew"></div>
+        <img [src]="e.img" width="64">
+        <div class="blue-corner" *ngIf="e.new"></div>
       </button>
     </ion-col>
 

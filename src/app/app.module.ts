@@ -16,6 +16,8 @@ import {QuestionAnswerPage} from '../pages/question-answer/question-answer';
 import {ScoreCounter} from "../logic/score-counter";
 import {ResultsPage} from '../pages/results/results';
 import {GameFlow} from "../logic/game-flow";
+import {CatPage} from "../pages/avatar/cat/cat";
+import {File} from "@ionic-native/file";
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import {GameFlow} from "../logic/game-flow";
     ChooseCategoryPage,
     ChooseQuizPage,
     QuestionReadingPage,
+    CatPage
     QuestionAnswerPage,
     AvatarPage,
     ResultsPage
@@ -45,10 +48,12 @@ import {GameFlow} from "../logic/game-flow";
     QuestionAnswerPage,
     AvatarPage,
     ResultsPage
+    CatPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    File
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ScoreCounter,
     GameFlow
