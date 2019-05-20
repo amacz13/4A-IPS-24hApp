@@ -4,7 +4,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import {DeviceOrientation} from '@ionic-native/device-orientation';
 import {ScreenOrientation} from '@ionic-native/screen-orientation/ngx';
 @Component({
   templateUrl: 'app.html'
@@ -16,6 +15,7 @@ export class MyApp {
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, scOr: ScreenOrientation) {
     platform.ready().then(() => {
+
       splashScreen.hide();
     });
   }
