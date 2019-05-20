@@ -1,3 +1,26 @@
 page-cat {
+  ion-col {
+    //display: flex;
+    //flex-direction: column;
 
+    button {
+      height: 64px !important;
+      padding: 0 20px !important;
+      margin: 15px 0 !important;
+      border-radius: 10px !important;
+
+      .button-inner {
+        height: 64px;
+        width: 80px;
+      }
+
+      .blue-corner {
+        border-top : 20px solid #28CAEB;
+        border-left : 30px solid transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
 }

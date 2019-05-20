@@ -19,6 +19,8 @@ import {GameFlow} from "../logic/game-flow";
 import {CatPage} from "../pages/avatar/cat/cat";
 import {File} from "@ionic-native/file";
 import {ScreenOrientation} from '@ionic-native/screen-orientation/ngx';
+import {PersoComponent} from "../components/perso/perso";
+import { AvatarProvider } from '../providers/avatar/avatar';
 
 @NgModule({
   declarations: [
@@ -58,6 +60,7 @@ import {ScreenOrientation} from '@ionic-native/screen-orientation/ngx';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ScoreCounter,
     GameFlow,
+    AvatarProvider
     ScreenOrientation
   ]
 })

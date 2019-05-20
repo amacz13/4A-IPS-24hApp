@@ -5,15 +5,19 @@
               *ngFor="let i of nbCats"
               (click)="show(cats.get(i).cat)"
               color="light">
-        {{i}}
-        {{this.cats.get(i).isNew}}
         <img [src]="cats.get(i).img" width="64">
         <div class="blue-corner" *ngIf="this.cats.get(i).isNew"></div>
       </button>
     </ion-col>
 
     <ion-col>
-
+      <perso-component *ngIf="loaded"
+        [hat]="cats.get(1).img"
+        [hair]="cats.get(2).img"
+        [face]="cats.get(3).img"
+        [top]="cats.get(4).img"
+        [bottom]="cats.get(5).img"
+      ></perso-component>
     </ion-col>
   </ion-row>
 </ion-content>
@@ -21,5 +25,5 @@
 
 
 <ion-footer>
-  <toolbar-component></toolbar-component>
+  <toolbar-component inAvatar="true"></toolbar-component>
 </ion-footer>

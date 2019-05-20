@@ -10,7 +10,7 @@
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
     "serve lab": "ionic serve --lab --livereload",
-    "run android lr": "ionic cordova run android -livereload",
+    "run android lr": "ionic cordova run android -livereload --address 192.168.43.84",
     "run android": "ionic cordova run android"
   },
   "dependencies": {

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { CatPage } from './cat';
+import {ComponentsModule} from "../../../components/components.module";
 
 @NgModule({
   declarations: [
@@ -8,6 +9,7 @@ import { CatPage } from './cat';
   ],
   imports: [
     IonicPageModule.forChild(CatPage),
+    ComponentsModule,
   ],
 })
 export class HatPageModule {}

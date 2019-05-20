@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {IonicPage, NavController, NavParams, Platform} from 'ionic-angular';
-import {File} from "@ionic-native/file";
+import {IonicPage, NavController} from 'ionic-angular';
 import {CatPage} from "./cat/cat";
+import {AvatarProvider} from "../../providers/avatar/avatar";
 
 /**
  * Generated class for the AvatarPage page.
@@ -18,39 +18,35 @@ import {CatPage} from "./cat/cat";
   templateUrl: 'avatar.html',
 })
 export class AvatarPage implements OnInit {
-  cats = new Map();
-  nbCats = new Array();
+  static cats = new Map();
+  static nbCats = new Array();
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, file:File, platform:Platform) {
-    platform.ready().then(() => {
-      file.listDir(file.applicationDirectory, "www/assets/imgs/avatar/")
-        .then(list => {
-          console.log(list);
-          let i=1;
-          for (let f of list) {
-            if (f.isDirectory) {
-              this.nbCats.push(i);
-              i++;
-              file.listDir(file.applicationDirectory, "www/assets/imgs/avatar/"+f.name)
-                .then(res => {
-                  console.log(f.name, Number(f.name.charAt(0)));
-                  this.cats.set(Number(f.name.charAt(0)),{cat: f.name, isNew: true, img: res[0].fullPath.substring(4)});
-                  console.log(this.nbCats, this.cats.get(this.nbCats[0]));
-                  console.log(1, this.cats.get(1));
-                })
-                .catch(e => console.log(e));
-            }
-          }
-          console.log(this.nbCats);
-        })
-        .catch(e => console.log(e))
-    });
+  static loaded = false;
+
+  constructor(public navCtrl: NavController, private provider: AvatarProvider) {
+    AvatarPage.cats.set(0, {img: 'assets/imgs/avatar/2hair/a.png', new: false, cat:'2hair'})
+    AvatarPage.nbCats.push(0);
   }
 
-  ngOnInit() {}
+  ngOnInit(): void {
+    console.log(this.cats);
+    console.log(this.nbCats);
+  }
 
   show(cat) {
     this.navCtrl.push(CatPage, {cat: cat});
+  }
+
+  get nbCats() {
+    return AvatarPage.nbCats;
+  }
+
+  get cats() {
+    return AvatarPage.cats;
+  }
+
+  get loaded() {
+    return AvatarPage.loaded;
   }
 
 }
