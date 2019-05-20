@@ -29,4 +29,7 @@ export class QuestionAnswerPage {
     console.log('ionViewDidLoad QuestionAnswerPage');
   }
 
+  goToResults() {
+    this.navCtrl.push(ResultsPage )
+  }
 }

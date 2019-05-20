@@ -2,13 +2,8 @@ import {Component} from '@angular/core';
 import {NavController} from "ionic-angular";
 import {AvatarPage} from "../../pages/avatar/avatar";
 import {MultiplayerSelectionPage} from "../../pages/multiplayer-selection/multiplayer-selection";
+import {ChooseCategoryPage} from '../../pages/choose-category/choose-category';
 
-/**
- * Generated class for the ToolbarComponent component.
- *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
- */
 @Component({
   selector: 'toolbar-component',
   templateUrl: 'toolbar.html'
@@ -27,5 +22,9 @@ export class ToolbarComponent {
   }
   goMultiplayer() {
     this.navCtrl.push(MultiplayerSelectionPage);
+  }
+
+  goSingleplayer() {
+    this.navCtrl.push(ChooseCategoryPage);
   }
 }

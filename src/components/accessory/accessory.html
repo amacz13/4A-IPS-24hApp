@@ -1,3 +1,10 @@
 <ion-card>
-  <img [src]="img">
+  <div class="button-group">
+    <button ion-button
+            *ngFor="let acc of accessories"
+            color="light">
+      <img [src]="acc.img" width="64">
+      <div class="blue-corner" *ngIf="acc.new"></div>
+    </button>
+  </div>
 </ion-card>

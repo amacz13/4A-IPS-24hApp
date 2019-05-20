@@ -1,4 +1,5 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Platform} from "ionic-angular";
 
 /**
  * Generated class for the AccessoryComponent component.
@@ -11,10 +12,20 @@ import {Component, Input} from '@angular/core';
   templateUrl: 'accessory.html'
 })
 export class AccessoryComponent {
-  @Input() img: string = "imgs/logo.png";
+  @Input() cat: string;
+  @Output() return = new EventEmitter();
 
-  constructor() {
-    console.log('loaded accessory');
+  accessories = [
+    {img: "assets/imgs/avatar/1hat/Hat.png", new: true},
+    {img: "assets/imgs/avatar/2hair/a.png", new: false}
+  ];
+
+  constructor(platform: Platform) {
+    platform.backButton.subscribe(e => {
+      this.return.emit(true);
+    })
   }
+
+
 
 }
