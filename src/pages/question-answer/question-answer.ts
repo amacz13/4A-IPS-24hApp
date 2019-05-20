@@ -22,6 +22,12 @@ export class QuestionAnswerPage {
   private dummyIndex: number = 0;
   private answers: Array<string>;
 
+  private timer:any;
+  private maxTime:number = 2000;
+  private timePercent: string = "100%";
+  private marginPercent: string = "0%";
+  private color:string = "#28EB7D";
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public score: ScoreCounter) {
     this.question = navParams.get("question");
     this.rand = Math.floor(Math.random()*4);
@@ -40,6 +46,26 @@ export class QuestionAnswerPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad QuestionAnswerPage');
+    this.StartTimer();
+  }
+
+  StartTimer(){
+    this.timer = setTimeout(x =>
+    {
+      if(this.maxTime <= 0) {
+        this.maxTime = 0;
+      } else {
+        if (this.maxTime <= 10) this.color = "#EBEB28";
+        if (this.maxTime <= 5) this.color = "#FF1A00";
+        this.marginPercent = ((2000-this.maxTime)/4000)*100 + "%";
+        this.timePercent = (this.maxTime/2000)*100 + "%";
+        console.log("Timer : "+this.timePercent);
+        this.maxTime -= 1;
+        this.StartTimer();
+      }
+    }, 10);
+
+
   }
 
   goToResults() {

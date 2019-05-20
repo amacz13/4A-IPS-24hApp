@@ -12,7 +12,7 @@
           <ion-row class="questContent">
             <h1>{{question.label}}</h1>
           </ion-row>
-          <ion-row class="green-line">
+          <ion-row [ngStyle]="{'width': timePercent, 'margin-left': marginPercent, 'color': color, 'background-color': color}" class="green-line">
           </ion-row>
         </ion-grid>
       </ion-card>
