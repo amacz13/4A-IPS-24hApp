@@ -22,7 +22,7 @@ import {QuestionAnswerPage} from '../pages/question-answer/question-answer';
     ChooseCategoryPage,
     ChooseQuizPage,
     QuestionReadingPage,
-    QuestionAnswerPage
+    QuestionAnswerPage,
     AvatarPage
   ],
   imports: [
@@ -38,7 +38,7 @@ import {QuestionAnswerPage} from '../pages/question-answer/question-answer';
     ChooseCategoryPage,
     ChooseQuizPage,
     QuestionReadingPage,
-    QuestionAnswerPage
+    QuestionAnswerPage,
     AvatarPage
   ],
   providers: [
