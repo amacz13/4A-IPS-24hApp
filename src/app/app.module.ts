@@ -13,7 +13,8 @@ import {ChooseQuizPage} from '../pages/choose-quiz/choose-quiz';
 import {AvatarPage} from "../pages/avatar/avatar";
 import {QuestionReadingPage} from '../pages/question-reading/question-reading';
 import {QuestionAnswerPage} from '../pages/question-answer/question-answer';
-import {ScoreCounter} from "./score-counter";
+import {ScoreCounter} from "../logic/score-counter";
+import {GameFlow} from "../logic/game-flow";
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import {ScoreCounter} from "./score-counter";
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ScoreCounter
+    ScoreCounter,
+    GameFlow
   ]
 })
 export class AppModule {}

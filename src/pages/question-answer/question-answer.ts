@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {ScoreCounter} from "../../app/score-counter";
+import {ScoreCounter} from "../../logic/score-counter";
 
 /**
  * Generated class for the QuestionAnswerPage page.
