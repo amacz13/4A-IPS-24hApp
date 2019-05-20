@@ -91,12 +91,12 @@ export class QuestionAnswerPage {
         else {
           setTimeout(() => this.navCtrl.push(QuestionAnswerPage, {
             question: question
-          }), 500);
+          }), 3000);
           this.navCtrl.push(QuestionReadingPage, {
             question: question
           });
         }
-      }, 200);
+      }, 2000);
     }
   }
 }

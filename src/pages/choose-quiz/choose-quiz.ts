@@ -34,7 +34,7 @@ export class ChooseQuizPage {
     const question: Question = this.game.start();
     setTimeout(() => this.navCtrl.push(QuestionAnswerPage, {
       question: question
-    }), 5000);
+    }), 3000);
     this.navCtrl.push(QuestionReadingPage, {
       question: question
     });
@@ -44,7 +44,7 @@ export class ChooseQuizPage {
     const question: Question = this.game.start();
     setTimeout(() => this.navCtrl.push(QuestionAnswerPage, {
       question: question
-    }), 5000);
+    }), 3000);
     this.navCtrl.push(QuestionReadingPage, {
       question: question
     });
