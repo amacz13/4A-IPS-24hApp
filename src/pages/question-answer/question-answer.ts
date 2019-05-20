@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {ScoreCounter} from "../../logic/score-counter";
 import {Question} from "../../logic/question";
+import {ResultsPage} from '../results/results';
 
 /**
  * Generated class for the QuestionAnswerPage page.
@@ -30,6 +31,6 @@ export class QuestionAnswerPage {
   }
 
   goToResults() {
-    this.navCtrl.push(ResultsPage )
+    this.navCtrl.push(ResultsPage)
   }
 }

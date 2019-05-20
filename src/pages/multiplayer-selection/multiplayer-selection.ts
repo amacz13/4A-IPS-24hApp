@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import {NavController, NavParams, ToastController} from 'ionic-angular';
 import {ChooseCategoryPage} from '../choose-category/choose-category';
 
 @Component({
@@ -10,7 +10,7 @@ export class MultiplayerSelectionPage {
 
   private invited = false;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController) {
   }
 
   search($event: UIEvent) {
@@ -22,6 +22,11 @@ export class MultiplayerSelectionPage {
   }
 
   updateInviteButton() {
+    if (!this.invited) this.toastCtrl.create({
+      message: 'Le joueur a bien été invité !',
+      duration: 5000,
+      position: 'bottom'
+    }).present();
     this.invited = !this.invited;
   }
 }

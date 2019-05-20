@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {AvatarProgressPage} from '../avatar-progress/avatar-progress';
 
 /**
- * Generated class for the ResultsPage page.
+ * Generated class for the AvatarProgressPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,19 +10,19 @@ import {AvatarProgressPage} from '../avatar-progress/avatar-progress';
 
 @IonicPage()
 @Component({
-  selector: 'page-results',
-  templateUrl: 'results.html',
+  selector: 'page-avatar-progress',
+  templateUrl: 'avatar-progress.html',
 })
-export class ResultsPage {
+export class AvatarProgressPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ResultsPage');
+    console.log('ionViewDidLoad AvatarProgressPage');
   }
 
-  goToProgress() {
-    this.navCtrl.push(AvatarProgressPage);
+  goToHome() {
+    this.navCtrl.popToRoot();
   }
 }

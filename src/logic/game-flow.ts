@@ -58,12 +58,8 @@ export class GameFlow {
       return this.quizz[this.indexQuizz];
     }
   }
-<<<<<<< HEAD
-=======
-
 
   log(){
     console.log(this.indexQuizz);
   }
->>>>>>> master
 }

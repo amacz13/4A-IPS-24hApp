@@ -18,6 +18,7 @@ import {ResultsPage} from '../pages/results/results';
 import {GameFlow} from "../logic/game-flow";
 import {CatPage} from "../pages/avatar/cat/cat";
 import {File} from "@ionic-native/file";
+import {ScreenOrientation} from '@ionic-native/screen-orientation/ngx';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import {File} from "@ionic-native/file";
     ChooseCategoryPage,
     ChooseQuizPage,
     QuestionReadingPage,
-    CatPage
+    CatPage,
     QuestionAnswerPage,
     AvatarPage,
     ResultsPage
@@ -47,16 +48,17 @@ import {File} from "@ionic-native/file";
     QuestionReadingPage,
     QuestionAnswerPage,
     AvatarPage,
-    ResultsPage
+    ResultsPage,
     CatPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    File
+    File,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ScoreCounter,
-    GameFlow
+    GameFlow,
+    ScreenOrientation
   ]
 })
 export class AppModule {}

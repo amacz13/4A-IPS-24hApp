@@ -28,15 +28,13 @@
             <h3 *ngIf="rand == 1">{{question.good}}</h3>
             <h3 *ngIf="rand != 1">{{question.dummyReps[0]}}</h3>
           </ion-card>
-        </ion-row>
-        <ion-row class="btns">
-          <ion-card class="answerbtn goodAnswer">
-            <h3 *ngIf="rand == 2">{{question.good}}</h3>
-            <h3 *ngIf="rand != 2">{{question.dummyReps[0]}}</h3>
+          <ion-card class="answerbtn">
+            <h3 *ngIf="rand == 0">{{question.good}}</h3>
+            <h3 *ngIf="rand != 0">{{question.dummyReps[dummyIndex]}}</h3>
           </ion-card>
           <ion-card class="answerbtn">
-            <h3 *ngIf="rand == 3">{{question.good}}</h3>
-            <h3 *ngIf="rand != 3">{{question.dummyReps[0]}}</h3>
+            <h3 *ngIf="rand == 1">{{question.good}}</h3>
+            <h3 *ngIf="rand != 1">{{question.dummyReps[0]}}</h3>
           </ion-card>
         </ion-row>
       </ion-grid>
