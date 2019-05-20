@@ -57,8 +57,8 @@ export class QuestionAnswerPage {
       if(this.maxTime <= 0) {
         this.maxTime = 0;
       } else {
-        if (this.maxTime <= 10) this.color = "#EBEB28";
-        if (this.maxTime <= 5) this.color = "#FF1A00";
+        if (this.maxTime <= 1000) this.color = "#EBEB28";
+        if (this.maxTime <= 500) this.color = "#FF1A00";
         this.marginPercent = ((2000-this.maxTime)/4000)*100 + "%";
         this.timePercent = (this.maxTime/2000)*100 + "%";
         console.log("Timer : "+this.timePercent);
