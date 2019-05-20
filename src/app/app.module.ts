@@ -15,6 +15,7 @@ import {QuestionReadingPage} from '../pages/question-reading/question-reading';
 import {QuestionAnswerPage} from '../pages/question-answer/question-answer';
 import {ScoreCounter} from "./score-counter";
 import {ResultsPage} from '../pages/results/results';
+import {GameFlow} from "../logic/game-flow";
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import {ResultsPage} from '../pages/results/results';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ScoreCounter
+    ScoreCounter,
+    GameFlow
   ]
 })
 export class AppModule {}
