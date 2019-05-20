@@ -17,8 +17,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AvatarPage {
   accessories = [
-      {img: "assets/imgs/avatar/1hat/Hat.png"},
-      {img: "assets/imgs/avatar/2hair/a.png"}
+      {img: "assets/imgs/avatar/1hat/Hat.png", new: true},
+      {img: "assets/imgs/avatar/2hair/a.png", new: false}
     ];
 
 

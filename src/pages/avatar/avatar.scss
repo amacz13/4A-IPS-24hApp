@@ -10,8 +10,16 @@ page-avatar {
       border-radius: 10px !important;
 
       .button-inner {
-        height: fit-content;
-        width: fit-content;
+        height: 64px;
+        width: 80px;
+      }
+
+      .blue-corner {
+        border-top : 20px solid #28CAEB;
+        border-left : 30px solid transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
       }
     }
   }
