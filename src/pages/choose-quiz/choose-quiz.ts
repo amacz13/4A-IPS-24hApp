@@ -39,4 +39,14 @@ export class ChooseQuizPage {
       label: question.label
     });
   }
+
+  randomQuiz() {
+    const question: Question = this.game.start();
+    setTimeout(() => this.navCtrl.push(QuestionAnswerPage, {
+      question: question
+    }), 5000);
+    this.navCtrl.push(QuestionReadingPage, {
+      label: question.label
+    });
+  }
 }

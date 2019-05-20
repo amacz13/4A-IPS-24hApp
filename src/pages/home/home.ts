@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {NavController, Platform} from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -7,7 +7,16 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  //TODO: solo and multijoueurs buttons activated only when clicking on "play" button
+  constructor(public navCtrl: NavController, public platform: Platform) {
+    platform.registerBackButtonAction(() => {
 
-  constructor(public navCtrl: NavController) {  }
+    switch (navCtrl.getActive().component.name) {
+      case "QuestionReadingPage":
+        break;
+      case "QuestionAnswerPage":
+        break;
+      default:
+        this.navCtrl.pop();
+    }
+  },1);}
 }

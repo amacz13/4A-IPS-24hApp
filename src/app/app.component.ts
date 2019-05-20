@@ -4,6 +4,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import {DeviceOrientation} from '@ionic-native/device-orientation';
+import {ScreenOrientation} from '@ionic-native/screen-orientation/ngx';
 @Component({
   templateUrl: 'app.html'
 })
@@ -12,11 +14,9 @@ export class MyApp {
   //TODO: Uncomment following line
   rootPage:any = HomePage;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, scOr: ScreenOrientation) {
     platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
-      //statusBar.styleDefault();
+      scOr.lock(scOr.ORIENTATIONS.PORTRAIT);
       splashScreen.hide();
     });
   }

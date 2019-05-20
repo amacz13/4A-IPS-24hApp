@@ -18,6 +18,7 @@ import {ResultsPage} from '../pages/results/results';
 import {GameFlow} from "../logic/game-flow";
 import {CatPage} from "../pages/avatar/cat/cat";
 import {File} from "@ionic-native/file";
+import {ScreenOrientation} from '@ionic-native/screen-orientation/ngx';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import {File} from "@ionic-native/file";
     File,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ScoreCounter,
-    GameFlow
+    GameFlow,
+    ScreenOrientation
   ]
 })
 export class AppModule {}
