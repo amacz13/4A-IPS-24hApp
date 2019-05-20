@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {ScoreCounter} from "../../logic/score-counter";
 import {Question} from "../../logic/question";
 import {ResultsPage} from '../results/results';
+import {QuestionReadingPage} from "../question-reading/question-reading";
+import {GameFlow} from "../../logic/game-flow";
 
 /**
  * Generated class for the QuestionAnswerPage page.
@@ -19,8 +21,8 @@ import {ResultsPage} from '../results/results';
 export class QuestionAnswerPage {
   private question: Question;
   private rand: number;
-  private dummyIndex: number = 0;
   private answers: Array<string>;
+  private answered: boolean = false;
 
   private timer:any;
   private maxTime:number = 2000;
@@ -28,7 +30,7 @@ export class QuestionAnswerPage {
   private marginPercent: string = "0%";
   private color:string = "#28EB7D";
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public score: ScoreCounter) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public game: GameFlow, public score: ScoreCounter) {
     this.question = navParams.get("question");
     this.rand = Math.floor(Math.random()*4);
 
@@ -94,12 +96,33 @@ export class QuestionAnswerPage {
   }
 
   checkAnswer(answer: string, evt: MouseEvent) {
-    if(answer === this.question.good)
+    if(!this.answered)
     {
-      evt.srcElement.className = evt.srcElement.className + " goodAnswer";
-    }
-    else {
-      evt.srcElement.className = evt.srcElement.className + " badAnswer";
+      this.answered = true;
+      if(answer === this.question.good)
+      {
+        evt.srcElement.className = evt.srcElement.className + " goodAnswer";
+      }
+      else {
+        evt.srcElement.className = evt.srcElement.className + " badAnswer";
+      }
+
+      const question: any = this.game.next();
+
+      setTimeout(() => {
+        if(question == 0)
+        {
+          this.navCtrl.push(ResultsPage);
+        }
+        else {
+          setTimeout(() => this.navCtrl.push(QuestionAnswerPage, {
+            question: question
+          }), 500);
+          this.navCtrl.push(QuestionReadingPage, {
+            question: question
+          });
+        }
+      }, 200);
     }
   }
 }

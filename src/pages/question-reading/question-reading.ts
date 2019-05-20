@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {IonicPage, NavController, NavParams, Platform} from 'ionic-angular';
+import {Question} from "../../logic/question";
 
 /**
  * Generated class for the QuestionReadingPage page.
@@ -14,10 +15,10 @@ import {IonicPage, NavController, NavParams, Platform} from 'ionic-angular';
   templateUrl: 'question-reading.html',
 })
 export class QuestionReadingPage {
-  label: string;
+  question: Question;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public platform: Platform) {
-    this.label = navParams.get("label");
+    this.question = navParams.get("question");
   }
 
   ionViewDidLoad() {

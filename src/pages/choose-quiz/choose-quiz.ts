@@ -36,7 +36,7 @@ export class ChooseQuizPage {
       question: question
     }), 5000);
     this.navCtrl.push(QuestionReadingPage, {
-      label: question.label
+      question: question
     });
   }
 
@@ -46,7 +46,7 @@ export class ChooseQuizPage {
       question: question
     }), 5000);
     this.navCtrl.push(QuestionReadingPage, {
-      label: question.label
+      question: question
     });
   }
 }
