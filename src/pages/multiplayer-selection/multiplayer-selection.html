@@ -11,8 +11,10 @@
       </ion-avatar>
       <h2>Guitoune</h2>
       <p>255 points</p>
-      <button item-end ion-button icon-only clear>
-        <ion-icon name="send"></ion-icon>
+      <button (click)="updateInviteButton()" item-end ion-button icon-only clear>
+        <ion-icon
+          [name]="invited ? 'close' :'send'">
+        </ion-icon>
       </button>
     </ion-item>
   </ion-card>

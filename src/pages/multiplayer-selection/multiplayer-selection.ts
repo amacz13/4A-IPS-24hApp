@@ -8,6 +8,8 @@ import {ChooseCategoryPage} from '../choose-category/choose-category';
 })
 export class MultiplayerSelectionPage {
 
+  private invited = false;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -17,5 +19,9 @@ export class MultiplayerSelectionPage {
 
   goToCategories() {
     this.navCtrl.push(ChooseCategoryPage);
+  }
+
+  updateInviteButton() {
+    this.invited = !this.invited;
   }
 }
