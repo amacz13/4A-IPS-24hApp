@@ -14,6 +14,7 @@ import {AvatarPage} from "../pages/avatar/avatar";
 import {QuestionReadingPage} from '../pages/question-reading/question-reading';
 import {QuestionAnswerPage} from '../pages/question-answer/question-answer';
 import {ScoreCounter} from "./score-counter";
+import {ResultsPage} from '../pages/results/results';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {ScoreCounter} from "./score-counter";
     ChooseQuizPage,
     QuestionReadingPage,
     QuestionAnswerPage,
-    AvatarPage
+    AvatarPage,
+    ResultsPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ import {ScoreCounter} from "./score-counter";
     ChooseQuizPage,
     QuestionReadingPage,
     QuestionAnswerPage,
-    AvatarPage
+    AvatarPage,
+    ResultsPage
   ],
   providers: [
     StatusBar,

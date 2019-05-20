@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {ScoreCounter} from "../../app/score-counter";
+import {ResultsPage} from '../results/results';
 
 /**
  * Generated class for the QuestionAnswerPage page.
@@ -23,4 +24,7 @@ export class QuestionAnswerPage {
     console.log('ionViewDidLoad QuestionAnswerPage');
   }
 
+  goToResults() {
+    this.navCtrl.push(ResultsPage )
+  }
 }
