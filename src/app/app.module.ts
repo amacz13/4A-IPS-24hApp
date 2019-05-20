@@ -27,7 +27,7 @@ import {File} from "@ionic-native/file";
     ChooseCategoryPage,
     ChooseQuizPage,
     QuestionReadingPage,
-    CatPage
+    CatPage,
     QuestionAnswerPage,
     AvatarPage,
     ResultsPage
@@ -47,13 +47,13 @@ import {File} from "@ionic-native/file";
     QuestionReadingPage,
     QuestionAnswerPage,
     AvatarPage,
-    ResultsPage
+    ResultsPage,
     CatPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    File
+    File,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ScoreCounter,
     GameFlow

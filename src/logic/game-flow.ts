@@ -37,6 +37,7 @@ export class GameFlow {
       new Array<string>("Aluminium", "Plastique", "Silicone"),
       "Bois")
   ];
+
   indexQuizz: number;
 
   constructor() {
@@ -58,12 +59,4 @@ export class GameFlow {
       return this.quizz[this.indexQuizz];
     }
   }
-<<<<<<< HEAD
-=======
-
-
-  log(){
-    console.log(this.indexQuizz);
-  }
->>>>>>> master
 }
