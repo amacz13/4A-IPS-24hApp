@@ -66,4 +66,14 @@ export class QuestionAnswerPage {
 
     return array;
   }
+
+  checkAnswer(answer: string, evt: MouseEvent) {
+    if(answer === this.question.good)
+    {
+      evt.srcElement.className = evt.srcElement.className + " goodAnswer";
+    }
+    else {
+      evt.srcElement.className = evt.srcElement.className + " badAnswer";
+    }
+  }
 }

@@ -142,4 +142,13 @@ page-question-answer {
     background-color: #28EB7D;
   }
 
+  .badAnswer {
+    background-color: #FF1A00;
+    color: white;
+  }
+
+  .card-md h3, .card-md h4, .card-md h5, .card-md h6 {
+    color: unset;
+  }
+
 }

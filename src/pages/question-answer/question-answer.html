@@ -20,8 +20,8 @@
     <ion-row class="answer">
       <ion-grid class="answergrid">
         <ion-row class="btns">
-          <ion-card *ngFor="let answer of answers" class="answerbtn">
-            <h3>{{answer}}</h3>
+          <ion-card *ngFor="let answer of answers" class="answerbtn" (click)="checkAnswer(answer, $event)">
+            <h3 style="pointer-events: none">{{answer}}</h3>
           </ion-card>
         </ion-row>
       </ion-grid>
