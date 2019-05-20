@@ -16,7 +16,6 @@ export class MyApp {
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, scOr: ScreenOrientation) {
     platform.ready().then(() => {
-      scOr.lock(scOr.ORIENTATIONS.PORTRAIT);
       splashScreen.hide();
     });
   }

@@ -51,7 +51,7 @@ export class GameFlow {
   next() {
     this.indexQuizz++;
 
-    if(this.indexQuizz > this.quizz.length)
+    if(this.indexQuizz >= this.quizz.length)
     {
       return 0;
     }
