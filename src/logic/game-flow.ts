@@ -62,6 +62,6 @@ export class GameFlow {
 
 
   log(){
-    console.log(this.point);
+    console.log(this.indexQuizz);
   }
 }

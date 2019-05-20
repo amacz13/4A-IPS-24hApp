@@ -13,7 +13,7 @@ import {ChooseQuizPage} from '../pages/choose-quiz/choose-quiz';
 import {AvatarPage} from "../pages/avatar/avatar";
 import {QuestionReadingPage} from '../pages/question-reading/question-reading';
 import {QuestionAnswerPage} from '../pages/question-answer/question-answer';
-import {ScoreCounter} from "./score-counter";
+import {ScoreCounter} from "../logic/score-counter";
 import {ResultsPage} from '../pages/results/results';
 import {GameFlow} from "../logic/game-flow";
 
