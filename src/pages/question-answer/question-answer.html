@@ -1,12 +1,15 @@
 <ion-content fullscreen padding>
   <ion-grid>
-    <ion-row>
+    <ion-row class="header">
       <h2 class="page-title">Histoire de l'informatique</h2>
     </ion-row>
     <ion-row class="question">
       <ion-card>
         <ion-grid>
-          <ion-row>
+          <ion-row class="questioncount">
+            <span>1 / 20</span>
+          </ion-row>
+          <ion-row class="questContent">
             <h1>A l'occasion de quel évènement majeur Alan Turing a-t-il inventé "The Bomb" ?</h1>
           </ion-row>
           <ion-row class="green-line">
@@ -15,12 +18,28 @@
       </ion-card>
     </ion-row>
     <ion-row class="answer">
-
+      <ion-grid class="answergrid">
+        <ion-row class="btns">
+          <ion-card class="answerbtn">
+            <h3>La bataille de Woodstock</h3>
+          </ion-card>
+          <ion-card class="answerbtn">
+            <h3>La première guerre mondiale</h3>
+          </ion-card>
+        </ion-row>
+        <ion-row class="btns">
+          <ion-card class="answerbtn goodAnswer">
+            <h3>La seconde guerre mondiale</h3>
+          </ion-card>
+          <ion-card class="answerbtn">
+            <h3>La guerre froide</h3>
+          </ion-card>
+        </ion-row>
+      </ion-grid>
     </ion-row>
     <ion-row class="bonus">
-      <ion-fab bottom center>
-        <button ion-fab mini><ion-icon name="custom-translate"></ion-icon></button>
-      </ion-fab>
+        <button ion-fab mini color="light"><ion-icon color="dark" name="custom-translate"></ion-icon></button>
+        <button ion-fab mini color="light"><ion-icon color="dark" name="custom-translate"></ion-icon></button>
     </ion-row>
   </ion-grid>
 
