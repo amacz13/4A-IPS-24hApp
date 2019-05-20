@@ -14,8 +14,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'question-reading.html',
 })
 export class QuestionReadingPage {
+  label: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.label = navParams.get("label");
   }
 
   ionViewDidLoad() {

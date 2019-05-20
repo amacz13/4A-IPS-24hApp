@@ -10,7 +10,7 @@
             <span>1 / 20</span>
           </ion-row>
           <ion-row class="questContent">
-            <h1>A l'occasion de quel évènement majeur Alan Turing a-t-il inventé "The Bomb" ?</h1>
+            <h1>{{question.label}}</h1>
           </ion-row>
           <ion-row class="green-line">
           </ion-row>
@@ -21,18 +21,22 @@
       <ion-grid class="answergrid">
         <ion-row class="btns">
           <ion-card class="answerbtn">
-            <h3>La bataille de Woodstock</h3>
+            <h3 *ngIf="rand == 0">{{question.good}}</h3>
+            <h3 *ngIf="rand != 0">{{question.dummyReps[dummyIndex]}}</h3>
           </ion-card>
           <ion-card class="answerbtn">
-            <h3>La première guerre mondiale</h3>
+            <h3 *ngIf="rand == 1">{{question.good}}</h3>
+            <h3 *ngIf="rand != 1">{{question.dummyReps[0]}}</h3>
           </ion-card>
         </ion-row>
         <ion-row class="btns">
           <ion-card class="answerbtn goodAnswer">
-            <h3>La seconde guerre mondiale</h3>
+            <h3 *ngIf="rand == 2">{{question.good}}</h3>
+            <h3 *ngIf="rand != 2">{{question.dummyReps[0]}}</h3>
           </ion-card>
           <ion-card class="answerbtn">
-            <h3>La guerre froide</h3>
+            <h3 *ngIf="rand == 3">{{question.good}}</h3>
+            <h3 *ngIf="rand != 3">{{question.dummyReps[0]}}</h3>
           </ion-card>
         </ion-row>
       </ion-grid>

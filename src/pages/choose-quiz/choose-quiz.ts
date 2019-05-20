@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {QuestionReadingPage} from '../question-reading/question-reading';
 import {QuestionAnswerPage} from '../question-answer/question-answer';
+import {Question} from "../../logic/question";
+import {GameFlow} from "../../logic/game-flow";
 
 /**
  * Generated class for the ChooseQuizPage page.
@@ -17,7 +19,7 @@ import {QuestionAnswerPage} from '../question-answer/question-answer';
 })
 export class ChooseQuizPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public game: GameFlow) {
   }
 
   ionViewDidLoad() {
@@ -29,7 +31,12 @@ export class ChooseQuizPage {
   }
 
   goToQuestion() {
-    setTimeout(() => this.navCtrl.push(QuestionAnswerPage), 5000);
-    this.navCtrl.push(QuestionReadingPage);
+    const question: Question = this.game.start();
+    setTimeout(() => this.navCtrl.push(QuestionAnswerPage, {
+      question: question
+    }), 5000);
+    this.navCtrl.push(QuestionReadingPage, {
+      label: question.label
+    });
   }
 }
