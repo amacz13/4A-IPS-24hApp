@@ -37,6 +37,7 @@ export class GameFlow {
       new Array<string>("Aluminium", "Plastique", "Silicone"),
       "Bois")
   ];
+
   indexQuizz: number;
 
   constructor() {
@@ -57,9 +58,5 @@ export class GameFlow {
     else {
       return this.quizz[this.indexQuizz];
     }
-  }
-
-  log(){
-    console.log(this.indexQuizz);
   }
 }

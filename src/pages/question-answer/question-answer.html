@@ -20,28 +20,15 @@
     <ion-row class="answer">
       <ion-grid class="answergrid">
         <ion-row class="btns">
-          <ion-card class="answerbtn">
-            <h3 *ngIf="rand == 0">{{question.good}}</h3>
-            <h3 *ngIf="rand != 0">{{question.dummyReps[dummyIndex]}}</h3>
-          </ion-card>
-          <ion-card class="answerbtn">
-            <h3 *ngIf="rand == 1">{{question.good}}</h3>
-            <h3 *ngIf="rand != 1">{{question.dummyReps[0]}}</h3>
-          </ion-card>
-          <ion-card class="answerbtn">
-            <h3 *ngIf="rand == 0">{{question.good}}</h3>
-            <h3 *ngIf="rand != 0">{{question.dummyReps[dummyIndex]}}</h3>
-          </ion-card>
-          <ion-card class="answerbtn">
-            <h3 *ngIf="rand == 1">{{question.good}}</h3>
-            <h3 *ngIf="rand != 1">{{question.dummyReps[0]}}</h3>
+          <ion-card *ngFor="let answer of answers" class="answerbtn">
+            <h3>{{answer}}</h3>
           </ion-card>
         </ion-row>
       </ion-grid>
     </ion-row>
     <ion-row class="bonus">
-        <button ion-fab mini color="light"><ion-icon color="dark" name="custom-translate"></ion-icon></button>
-        <button ion-fab mini color="light"><ion-icon color="dark" name="custom-translate"></ion-icon></button>
+      <button ion-fab mini color="light"><ion-icon color="dark" name="custom-translate"></ion-icon></button>
+      <button ion-fab mini color="light"><ion-icon color="dark" name="custom-translate"></ion-icon></button>
     </ion-row>
   </ion-grid>
 
