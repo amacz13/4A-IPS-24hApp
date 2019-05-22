@@ -60,7 +60,7 @@ import { AvatarProvider } from '../providers/avatar/avatar';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ScoreCounter,
     GameFlow,
-    AvatarProvider
+    AvatarProvider,
     ScreenOrientation
   ]
 })
