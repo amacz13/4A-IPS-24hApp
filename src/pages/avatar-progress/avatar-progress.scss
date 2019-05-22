@@ -1,4 +1,4 @@
-page-results {
+page-avatar-progress {
 
   h2 {
     text-align: center;
@@ -21,20 +21,17 @@ page-results {
   }
 
   .pseudo {
-    margin-top: 1em;
+    margin-top: 4em;
     height: 40%;
+    width: 100%;
   }
 
-  .pl1 {
-    padding: 1em;
-    border-right: solid;
-    border-color: #222222;
+  .level {
+    width: 100%;
   }
 
-  .pl2 {
-    padding: 1em;
-    border-left: solid;
-    border-color: #222222;
+  .xp {
+    width: 100%;
   }
 
   .share {
@@ -44,16 +41,48 @@ page-results {
     flex-direction: row;
     justify-content: center;
     align-content: center;
-
-    img {
-      height: 50%;
-      margin: 5%;
-    }
   }
 
+  .detail {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin-top: 4em;
+  }
+
+  .avatar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 150px;
+  }
+
+  img {
+    height: 150px;
+    width: 150px;
+    margin: 5%;
+  }
 
   ion-icon {
     color: color($theming, primary, dark);
+  }
+
+  .progressbar {
+    height: 2em;
+    width: 80%;
+    margin: 10%;
+    border-radius: 5px;
+    border-style: solid;
+  }
+
+  .progress{
+    border-radius: 5px;
+    background-color: #28EB7D;
+    width: 30%;
+    height: 100%;
   }
 
 }
