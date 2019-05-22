@@ -11,7 +11,7 @@ import { HomePage } from '../pages/home/home';
 })
 export class MyApp {
   //TODO: Change following line
-  rootPage:any = AvatarPage;
+  rootPage:any = HomePage;
 
   constructor(platform: Platform,
               statusBar: StatusBar,
