@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {NavController} from "ionic-angular";
+import {IonicPage, NavController} from "ionic-angular";
 import {AvatarPage} from "../../pages/avatar/avatar";
 
 /**
@@ -8,6 +8,9 @@ import {AvatarPage} from "../../pages/avatar/avatar";
  * See https://angular.io/api/core/Component for more info on Angular
  * Components.
  */
+@IonicPage({
+  name: 'page-accessory'
+})
 @Component({
   selector: 'accessory',
   templateUrl: 'accessory.html'

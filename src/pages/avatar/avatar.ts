@@ -1,7 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {CatPage} from "./cat/cat";
-import {AvatarProvider} from "../../providers/avatar/avatar";
 
 /**
  * Generated class for the AvatarPage page.
@@ -17,7 +16,7 @@ import {AvatarProvider} from "../../providers/avatar/avatar";
   selector: 'page-avatar',
   templateUrl: 'avatar.html',
 })
-export class AvatarPage implements OnInit {
+export class AvatarPage {
   static cats = new Map();
   static nbCats = new Array();
 
@@ -28,11 +27,6 @@ export class AvatarPage implements OnInit {
     AvatarPage.nbCats.push(0);
     console.log(navParams.get('cat'));
     console.log(navParams.get('img'));
-  }
-
-  ngOnInit(): void {
-    console.log(this.cats);
-    console.log(this.nbCats);
   }
 
   show(cat) {
