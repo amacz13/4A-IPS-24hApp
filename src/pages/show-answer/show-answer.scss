@@ -1,4 +1,4 @@
-page-question-answer {
+page-show-answer {
   ion-content {
     height: 100% !important;
   }
@@ -35,11 +35,27 @@ page-question-answer {
   }
 
   .header {
-    height: 20%;
+    height: 10%;
+  }
+
+  b {
+    font-size: 18px;
+  }
+
+  p {
+    padding: 1em;
+    font-size: 16px;
   }
 
   .question {
-    height: 40%;
+    height: 70%;
+  }
+
+  .questAnsSeparator {
+    width: 50%;
+    height: 10px;
+    background-color: black;
+    margin-bottom: 1em;
   }
 
   .content {

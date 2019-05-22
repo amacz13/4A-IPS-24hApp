@@ -100,6 +100,7 @@ export class QuestionAnswerPage {
     if(!this.answered)
     {
       this.answered = true;
+      this.timer = 0;
       if(answer === this.question.good)
       {
         evt.srcElement.className = evt.srcElement.className + " goodAnswer";
