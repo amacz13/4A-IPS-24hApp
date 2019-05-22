@@ -1,0 +1,26 @@
+<ion-content fullscreen padding>
+  <ion-grid>
+    <ion-row class="header">
+      <h2 class="page-title">Histoire de l'informatique</h2>
+    </ion-row>
+    <ion-row class="question">
+      <ion-card>
+        <ion-grid>
+          <ion-row class="questioncount">
+            <span>{{game.indexQuizz + 1}} / {{game.quizz.length}}</span>
+          </ion-row>
+          <ion-row class="questContent">
+            <h1>{{question.label}}</h1>
+          </ion-row>
+          <hr class="questAnsSeparator">
+          <ion-row>
+            <b>Lorem ipsum dolor sit amet...</b>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    </ion-row>
+    <ion-row class="nextQuestion">
+      <h3>Prochaine question dans {{time}} secondes...</h3>
+    </ion-row>
+  </ion-grid>
+</ion-content>

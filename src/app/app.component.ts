@@ -6,19 +6,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import {AvatarPage} from "../pages/avatar/avatar";
 import {AvatarProvider} from "../providers/avatar/avatar";
 import { HomePage } from '../pages/home/home';
-import {ScreenOrientation} from '@ionic-native/screen-orientation/ngx';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = AvatarPage;
   //TODO: Uncomment following line
-  // rootPage:any = HomePage;
+  rootPage:any = HomePage;
 
   constructor(platform: Platform,
               statusBar: StatusBar,
               splashScreen: SplashScreen,
-              scOr: ScreenOrientation,
               avatar: AvatarProvider) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.

@@ -5,6 +5,7 @@ import {Question} from "../../logic/question";
 import {ResultsPage} from '../results/results';
 import {QuestionReadingPage} from "../question-reading/question-reading";
 import {GameFlow} from "../../logic/game-flow";
+import {ShowAnswerPage} from '../show-answer/show-answer';
 
 /**
  * Generated class for the QuestionAnswerPage page.
@@ -107,22 +108,9 @@ export class QuestionAnswerPage {
         evt.srcElement.className = evt.srcElement.className + " badAnswer";
       }
 
-      const question: any = this.game.next();
-
-      setTimeout(() => {
-        if(question == 0)
-        {
-          this.navCtrl.push(ResultsPage);
-        }
-        else {
-          setTimeout(() => this.navCtrl.push(QuestionAnswerPage, {
-            question: question
-          }), 3000);
-          this.navCtrl.push(QuestionReadingPage, {
-            question: question
-          });
-        }
-      }, 2000);
+      setTimeout(() => this.navCtrl.push(ShowAnswerPage, {
+        question: this.question
+      }), 1000);
     }
   }
 }

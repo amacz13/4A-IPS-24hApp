@@ -21,6 +21,8 @@ import {File} from "@ionic-native/file";
 import {ScreenOrientation} from '@ionic-native/screen-orientation/ngx';
 import {PersoComponent} from "../components/perso/perso";
 import { AvatarProvider } from '../providers/avatar/avatar';
+import {AvatarProgressPage} from '../pages/avatar-progress/avatar-progress';
+import {ShowAnswerPage} from '../pages/show-answer/show-answer';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { AvatarProvider } from '../providers/avatar/avatar';
     CatPage,
     QuestionAnswerPage,
     AvatarPage,
-    ResultsPage
+    ResultsPage,
+    AvatarProgressPage,
+    ShowAnswerPage
   ],
   imports: [
     BrowserModule,
@@ -51,7 +55,9 @@ import { AvatarProvider } from '../providers/avatar/avatar';
     QuestionAnswerPage,
     AvatarPage,
     ResultsPage,
-    CatPage
+    CatPage,
+    AvatarProgressPage,
+    ShowAnswerPage
   ],
   providers: [
     StatusBar,
@@ -60,8 +66,7 @@ import { AvatarProvider } from '../providers/avatar/avatar';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ScoreCounter,
     GameFlow,
-    AvatarProvider,
-    ScreenOrientation
+    AvatarProvider
   ]
 })
 export class AppModule {}

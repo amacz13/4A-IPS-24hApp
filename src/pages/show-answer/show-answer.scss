@@ -1,0 +1,154 @@
+page-question-answer {
+  ion-content {
+    height: 100% !important;
+  }
+
+  .page-title {
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 1em !important;
+  }
+
+  ion-grid {
+    height: 100%;
+  }
+
+  ion-card {
+    border-radius: 0.5em !important;
+    padding: 0 !important;
+
+    .grid {
+      padding: 0 !important;
+      position: relative;
+    }
+
+    h1 {
+      padding: 1em;
+      font-family: "Roboto", "Helvetica Neue", sans-serif;
+      font-weight: lighter !important;
+      text-align: left !important;
+      font-size: 23px !important;
+    }
+  }
+
+  .header {
+    height: 20%;
+  }
+
+  .question {
+    height: 40%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 30%;
+  }
+
+  .questContent {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .answer {
+    height: 40%;
+  }
+
+  .bonus {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ion-icon {
+    &[class*="custom-"] {
+      mask-size: contain;
+      mask-position: 50% 50%;
+      mask-repeat: no-repeat;
+      background: currentColor;
+      width: 1em;
+      height: 1em;
+    }
+
+    &[class*="custom-translate"] {
+      mask-image: url(../assets/icon-translate.svg);
+    }
+  }
+
+  .green-line {
+    height: 10px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    color: #28EB7D;
+    background-color: #28EB7D;
+  }
+
+  .answergrid {
+    padding: 0 !important;
+  }
+
+  .questioncount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5em;
+
+    span {
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+  }
+
+  .btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .answerbtn {
+    height: 6em;
+    margin: 2.5%;
+    width: 45%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+
+    h3 {
+      padding: 0.2em;
+      width: 100%;
+      text-align: center;
+      vertical-align: center;
+    }
+  }
+
+  .goodAnswer {
+    background-color: #28EB7D;
+  }
+
+  .badAnswer {
+    background-color: #FF1A00;
+    color: white;
+  }
+
+  .card-md h3, .card-md h4, .card-md h5, .card-md h6 {
+    color: unset;
+  }
+
+}
