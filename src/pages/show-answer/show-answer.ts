@@ -14,6 +14,7 @@ import {QuestionAnswerPage} from '../question-answer/question-answer';
 export class ShowAnswerPage {
   private question: Question;
   private time: number = 5;
+  private sec: string = "secondes";
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public game: GameFlow) {
     this.question = navParams.get("question");
@@ -47,6 +48,7 @@ export class ShowAnswerPage {
   timer() {
     setTimeout(() => {
       this.time -= 1;
+      if (this.time <= 1) this.sec = "seconde";
       if (this.time > 0) this.timer();
     },1000);
   }

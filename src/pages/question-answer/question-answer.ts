@@ -55,7 +55,7 @@ export class QuestionAnswerPage {
   StartTimer(){
     this.timer = setTimeout(x =>
     {
-      if(this.maxTime <= 0) {
+      if(this.maxTime <= 0 || this.answered) {
         this.maxTime = 0;
         this.navCtrl.push(ShowAnswerPage, {
           question: this.question
@@ -65,7 +65,7 @@ export class QuestionAnswerPage {
         if (this.maxTime <= 500) this.color = "#FF1A00";
         this.marginPercent = ((2000-this.maxTime)/4000)*100 + "%";
         this.timePercent = (this.maxTime/2000)*100 + "%";
-        console.log("Timer : "+this.timePercent);
+        //console.log("Timer : "+this.timePercent);
         this.maxTime -= 1;
         this.StartTimer();
       }
@@ -102,8 +102,7 @@ export class QuestionAnswerPage {
   checkAnswer(answer: string, evt: MouseEvent) {
     if(!this.answered)
     {
-      this.answered = true;
-      this.timer = 0;
+
       if(answer === this.question.goodAnswer)
       {
         evt.srcElement.className = evt.srcElement.className + " goodAnswer";
@@ -112,9 +111,9 @@ export class QuestionAnswerPage {
         evt.srcElement.className = evt.srcElement.className + " badAnswer";
       }
 
-      setTimeout(() => {
-        this.timer = 0;
-      }, 1000);
+
+      setTimeout(() => this.answered = true, 1000);
+
 
       /*setTimeout(() => this.navCtrl.push(ShowAnswerPage, {
         question: this.question
