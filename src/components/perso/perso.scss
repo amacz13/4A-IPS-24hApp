@@ -1,3 +1,12 @@
-perso {
-
+.head {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
 }
+
+.head .face {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
