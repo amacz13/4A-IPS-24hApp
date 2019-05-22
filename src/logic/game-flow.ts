@@ -77,15 +77,15 @@ export class GameFlow {
       "Ordiphone",
       "Contraction de téléphone et ordinateur, le mot met en avant la puissance des machines actuelles."),
 
-    new Question("Au moment de la création de cette application, quelle portion de la population mondiale a accès à Internet ?",
+    new Question("Au moment de la création de cette application, quelle portion de la population mondiale avait accès à Internet ?",
       new Array<string>("1/4", "5/6", "1/3"),
       "1/2",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+      "Le nombre d’internautes dans le monde a dépassé les 4 milliards, et les ¾ d’entre eux utilisent les réseaux sociaux."),
 
     new Question("En quelle année est apparue la première bannière de publicité sur internet ?",
       new Array<string>("1986", "2000", "2003"),
       "1994",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+      "Cette publicité est apparue sur le site Web HotWired.com, devenu depuis Wired.com. Elle a été réalisée pour l’opérateur téléphonique américain AT&T."),
 
     new Question("Quel objet a été le premier à etre mis en vente et acheté sur internet ?",
       new Array<string>("Une télécommande", "Une boite de chaussette", "Un ordinateur"),
@@ -94,13 +94,13 @@ export class GameFlow {
 
     new Question("Comment s’appelle la partie cachée d’internet ?",
       new Array<string>("Le Hidden Internet", "Le High Castle", "Le Deep Network"),
-      "Le Deep Web",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+      "Le Dark Net",
+      "Le Dark Net représente toutes les pages internet qui ne sont pas référencées (et donc pas accessibles) par un moteur de recherche classique."),
 
     new Question("Quelle était la principale cause de bug de l’an 2000 ?",
       new Array<string>("Les insectes", "Les pannes de courant", "L'obsolescence programmée"),
-      "Les erreurs de conception",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+      "Les formats des dates",
+      "Dans de nombreux programmes et beaucoup de bases de données, il manquait les deux chiffres 19 correspondant au siècle, l'année 2000 était donc du point de vue informatique la même que l'année 1900."),
 
     new Question("Quels sont les principaux éléments composant un code HTML ?",
       new Array<string>("Des poteaux", "Des panneaux", "Des classes"),
@@ -128,15 +128,15 @@ export class GameFlow {
       "Concours Geipi",
       "Le concours Geipi ne permet pas d’accéder directement au cycle ingénieur (BAC+2). Il permet d'accéder au cycle préparatoire (après le bac)."),
 
-    new Question("Le bâtiment de l'ENSIM",
-      new Array<string>("A été inauguré en 2002", "Était à l'origine une serre", "Était à l'origine un laboratoire"),
-      "A remporté un prix d'architecture",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+    new Question("Parmis les éléments suivants lequel a été récompensé ?",
+      new Array<string>("La salle blanche de l'ENSIM", "La thermique du batiment de l'ENSIM", "Les salles de TP de l'ENSIM"),
+      "Le batiment de l’ENSIM",
+      "La bâtiment créé par Christian Hauvette, a été lauréat du Grand Prix national d’architecture et inauguré en décembre 1997."),
 
     new Question("Quelle association n'existe pas à l'ENSIM ?",
       new Array<string>("Ensim'elec", "Le VASI", "La K'Verne"),
-      "Info Gras Fist",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+      "Vibr’ENSIM",
+      "Ensim'elec, le VASI, et La K'Verne sont des associations, ou club toujours en activité à l'ENSIM. La Vibr'ENSIM n'a jamais existée."),
 
     new Question("Parmis les diplomes suivants lequel peut on obtenir à l'ENSIM ?",
       new Array<string>("Un diplôme de développeur web", "Un diplôme de jardinier", "Un diplôme de commercial"),
@@ -144,64 +144,50 @@ export class GameFlow {
       "L’École nationale supérieure d’ingénieurs du Mans (ENSIM) est l'une des 205 écoles d'ingénieurs françaises accréditées au 1er septembre 2018 à délivrer un diplôme d'ingénieur."),
 
     new Question("Quel nom porte le reseau des anciens de l'ENSIM ?",
-      new Array<string>("CUBE", "PYRAMIDE", "CYLINDRE"),
+      new Array<string>("CUBE", "PYRAMIDE"
+        , "CYLINDRE"),
       "SPHERE",
       "Sphère est une association regroupant des anciens étudiants de l’école. Cette association organise notamment la journée des Anciens."),
 
     new Question("A quel évenement l'ENSIM n'est-elle pas associée ?",
       new Array<string>("La Journée Agilemans", "La coupe de france de robotique", "Les 24h du code"),
       "Le grand prix de france moto",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+      "L'ENSIM co-organise depuis leurs créations la journée Agilemans et les 24h du code. Elle participe également chaque année à la coupe de france de robotique."),
 
-    new Question("Que signifie l'accornyme ENSIM ?",
+    new Question("Que signifie l'accronyme ENSIM ?",
       new Array<string>("Ecole Nationale Supérieur d'Informatique du Mans", "Établissement Nautique Surveillé Informatiquement du Mans", "Ecole Nationale Supérieure de l'Infrastructure Militaire"),
       "Ecole Nationale Supérieur d'Ingénieur du Mans",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+      "L’ENSIM peut aussi représenter : l’Ecole Nationale Supérieure de l'Infrastructure Militaire du ministère de la défense est basée à Anger (49), est liée à l'ENSAM."),
 
     new Question("En quelle année a été fondée l’ENSIM ?",
       new Array<string>("1985", "1997", "1993"),
       "1995",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+      "L’ENSIM a été fondée en 1995. En 1997 correspond à la prise de possession du bâtiment actuelle. Auparavant les cours se faisaient à l'IUT en section mesures physiques."),
 
     new Question("Quel est le slogan de l’ENSIM ?",
       new Array<string>("Des infos… et des Vacs aussi !", "Être en phase avec votre développement", "Entrez dans un monde de plaisir"),
       "Inventer le confort de demain",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+      "“Des infos… et des Vacs aussi !” est le slogan de l’Ensimien, le journal de l’école, “Entrez dans un monde de plaisir” est un ancien slogan de Jensim, la junior étudiante, tandis que “Être en phase avec votre développement” est tout simplement un slogan inventé."),
 
-    new Question("",
-      new Array<string>("", "", ""),
-      "",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+    new Question("Quelle mission n'est pas celle d'un ingénieur en acoustique ?",
+      new Array<string>("Réaliser des mesure au sonomètre", "Réaliser des études vibratoire", "Utiliser ses connaissances en mécaniques des fluides"),
+      "S'occuper de la sonorisation de concerts",
+      "Le métier d'ingénieur son ne correspond pas à un diplôme d'ingénieur mais à différents niveau de responsabilité ayant des formations de bac +2 à bac +5."),
 
-    new Question("",
-      new Array<string>("", "", ""),
-      "",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+    new Question("À quelle période de l'année ont lieu les portes ouvertes de l’ENSIM ?",
+      new Array<string>("Mars-Avril", "Mai-Juin", "Septembre-Octobre"),
+      "Janvier-Février",
+      "La date des portes ouvertes de l'ENSIM correspond à celle des portes ouvertes de Le Mans Université qui est généralement durant la période Janvier-Février."),
 
-    new Question("",
-      new Array<string>("", "", ""),
-      "",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+    new Question("Quel est le taux d'embauche des diplomés de l'ENSIM 1 an après l’obtention du diplôme ?",
+      new Array<string>("95%", "90%", "85%"),
+      "100%",
+      "Près de 80 % des ingénieurs diplômés trouvent un emploi 6 mois après leur sortie de l’école et 100% d’entre eux occupe un emploi 1 an après."),
 
-    new Question("",
-      new Array<string>("", "", ""),
-      "",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
-
-    new Question("",
-      new Array<string>("", "", ""),
-      "",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
-
-    new Question("",
-      new Array<string>("", "", ""),
-      "",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
-
-    new Question("",
-      new Array<string>("", "", ""),
-      "",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+    new Question("Quelle construction trouve-t-on à l’arrière de l’ENSIM ?",
+      new Array<string>("Un bunker", "Une statue du fondateur de l’école", "Un champ de panneaux solaires"),
+      "Une éolienne",
+      "Cette éolienne dispose de nombreux capteurs dont les données peuvent être utilisées lors de projet étudiants.")
   ];
 
   questionsDone: Array<number>;
