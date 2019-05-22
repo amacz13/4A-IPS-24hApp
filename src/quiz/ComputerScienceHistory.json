@@ -1,0 +1,19 @@
+{
+  "quiz": {
+    "title": "Histoire de l'Informatique",
+    "type": "solo",
+    "questions": [
+      {
+        "label": "A l’occasion de quel événement majeur Alan Turing a-t-il inventé “The Bomb” ?",
+        "goodAnswer" : "La seconde guerre mondiale",
+        "badAnswers": ["La bataille de Woodstock", "La première guerre mondiale", "La guerre froide"],
+        "explanation": "Cette machine a permis de décrypter les communications allemandes pendant la seconde guerre mondiale qui étaient chiffrées avec la fameuse machine Enigma."
+      },
+      {
+
+      }
+    ]
+
+
+    }
+}
