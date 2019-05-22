@@ -1,8 +1,7 @@
 {
-  "name": "app-24h",
+  "name": "24hQuiz",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "ENSIM",
   "private": true,
   "scripts": {
     "start": "ionic-app-scripts serve",

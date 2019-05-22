@@ -4,6 +4,7 @@ import {QuestionReadingPage} from '../question-reading/question-reading';
 import {QuestionAnswerPage} from '../question-answer/question-answer';
 import {Question} from "../../logic/question";
 import {GameFlow} from "../../logic/game-flow";
+import {AvatarProgressPage} from '../avatar-progress/avatar-progress';
 
 /**
  * Generated class for the ChooseQuizPage page.

@@ -39,10 +39,10 @@ export class QuestionAnswerPage {
 
     for(let i = 0; i < 3; i++)
     {
-      this.answers.push(this.question.dummyReps[i]);
+      this.answers.push(this.question.badAnswers[i]);
     }
 
-    this.answers.push(this.question.good);
+    this.answers.push(this.question.goodAnswer);
 
     this.answers = this.shuffle(this.answers);
   }
@@ -55,14 +55,17 @@ export class QuestionAnswerPage {
   StartTimer(){
     this.timer = setTimeout(x =>
     {
-      if(this.maxTime <= 0) {
+      if(this.maxTime <= 0 || this.answered) {
         this.maxTime = 0;
+        this.navCtrl.push(ShowAnswerPage, {
+          question: this.question
+        });
       } else {
         if (this.maxTime <= 1000) this.color = "#EBEB28";
         if (this.maxTime <= 500) this.color = "#FF1A00";
         this.marginPercent = ((2000-this.maxTime)/4000)*100 + "%";
         this.timePercent = (this.maxTime/2000)*100 + "%";
-        console.log("Timer : "+this.timePercent);
+        //console.log("Timer : "+this.timePercent);
         this.maxTime -= 1;
         this.StartTimer();
       }
@@ -99,9 +102,8 @@ export class QuestionAnswerPage {
   checkAnswer(answer: string, evt: MouseEvent) {
     if(!this.answered)
     {
-      this.answered = true;
-      this.timer = 0;
-      if(answer === this.question.good)
+
+      if(answer === this.question.goodAnswer)
       {
         evt.srcElement.className = evt.srcElement.className + " goodAnswer";
       }
@@ -109,9 +111,13 @@ export class QuestionAnswerPage {
         evt.srcElement.className = evt.srcElement.className + " badAnswer";
       }
 
-      setTimeout(() => this.navCtrl.push(ShowAnswerPage, {
+
+      setTimeout(() => this.answered = true, 1000);
+
+
+      /*setTimeout(() => this.navCtrl.push(ShowAnswerPage, {
         question: this.question
-      }), 1000);
+      }), 1000);*/
     }
   }
 }

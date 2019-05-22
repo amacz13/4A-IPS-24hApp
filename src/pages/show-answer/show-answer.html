@@ -12,14 +12,14 @@
           <ion-row class="questContent">
             <h1>{{question.label}}</h1>
             <hr class="questAnsSeparator">
-            <b>{{question.good}}</b>
+            <b>{{question.goodAnswer}}</b>
             <p>{{question.explanation}}</p>
           </ion-row>
         </ion-grid>
       </ion-card>
     </ion-row>
     <ion-row class="nextQuestion">
-      <h2 class="page-title">Prochaine question dans {{time}} secondes...</h2>
+      <h2 class="page-title">Prochaine question dans<br>{{time}} {{sec}}...</h2>
     </ion-row>
   </ion-grid>
 </ion-content>

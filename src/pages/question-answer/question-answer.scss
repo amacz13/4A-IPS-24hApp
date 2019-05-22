@@ -84,6 +84,10 @@ page-question-answer {
     &[class*="custom-translate"] {
       mask-image: url(../assets/icon-translate.svg);
     }
+
+    &[class*="custom-healing"] {
+      mask-image: url(../assets/icon-healing.svg);
+    }
   }
 
   .green-line {
