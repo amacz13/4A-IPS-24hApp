@@ -28,7 +28,6 @@ export class MyApp {
           AvatarPage.cats = avatar.cats;
           AvatarPage.nbCats = avatar.nbCats;
           AvatarPage.loaded = true;
-          console.log('done');
         });
 
     });

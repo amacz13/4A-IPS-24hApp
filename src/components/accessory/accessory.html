@@ -2,6 +2,7 @@
   <div class="button-group">
     <button ion-button
             *ngFor="let acc of accessories"
+            (click)="choose(acc.img)"
             color="light">
       <img [src]="acc.img" width="64">
       <div class="blue-corner" *ngIf="acc.new"></div>

@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {IonicPage, NavController} from 'ionic-angular';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {CatPage} from "./cat/cat";
 import {AvatarProvider} from "../../providers/avatar/avatar";
 
@@ -23,9 +23,11 @@ export class AvatarPage implements OnInit {
 
   static loaded = false;
 
-  constructor(public navCtrl: NavController, private provider: AvatarProvider) {
+  constructor(public navCtrl: NavController, navParams: NavParams) {
     AvatarPage.cats.set(0, {img: 'assets/imgs/avatar/2hair/a.png', new: false, cat:'2hair'})
     AvatarPage.nbCats.push(0);
+    console.log(navParams.get('cat'));
+    console.log(navParams.get('img'));
   }
 
   ngOnInit(): void {
@@ -34,6 +36,7 @@ export class AvatarPage implements OnInit {
   }
 
   show(cat) {
+    console.log('push to cat:', cat);
     this.navCtrl.push(CatPage, {cat: cat});
   }
 
