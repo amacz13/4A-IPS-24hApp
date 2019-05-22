@@ -1,6 +1,8 @@
 import {Component} from '@angular/core';
-import {IonicPage, NavParams, Platform} from 'ionic-angular';
+import {IonicPage, NavController, NavParams, Platform} from 'ionic-angular';
 import {File} from '@ionic-native/file';
+import {AvatarPage} from "../avatar";
+import {PersoComponent} from "../../../components/perso/perso";
 
 /**
  * Generated class for the CatPage page.
@@ -19,7 +21,10 @@ export class CatPage {
 
   elements = new Array();
 
-  constructor(file: File, platform: Platform, navParams: NavParams) {
+  constructor(file: File,
+              platform: Platform,
+              navParams: NavParams,
+              private navCtrl: NavController) {
     this.cat = navParams.get('cat');
 
     platform.ready().then(() => {
@@ -33,6 +38,25 @@ export class CatPage {
         })
         .catch(e => console.log(e))
     });
+  }
+
+  choose(img) {
+    console.log('push img:', img);
+    if (this.cat.includes('hat')) {
+      PersoComponent.hat = img;
+    }
+    if (this.cat.includes('hair')) {
+      PersoComponent.hair = img;
+    }
+    if (this.cat.includes('face')) {
+      PersoComponent.face = img;
+    }
+    if (this.cat.includes('top')) {
+      PersoComponent.top = img;
+    }
+    if (this.cat.includes('bottom')) {
+      PersoComponent.bottom = img;
+    }
   }
 
 }

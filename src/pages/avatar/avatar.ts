@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
-import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import {IonicPage, NavController} from 'ionic-angular';
 import {CatPage} from "./cat/cat";
+import {PersoComponent} from "../../components/perso/perso";
 
 /**
  * Generated class for the AvatarPage page.
@@ -22,16 +23,15 @@ export class AvatarPage {
 
   static loaded = false;
 
-  constructor(public navCtrl: NavController, navParams: NavParams) {
-    AvatarPage.cats.set(0, {img: 'assets/imgs/avatar/2hair/a.png', new: false, cat:'2hair'})
-    AvatarPage.nbCats.push(0);
-    console.log(navParams.get('cat'));
-    console.log(navParams.get('img'));
-  }
+  names = ['Fred', 'Bubulle', 'Gitoune'];
+
+  constructor(public navCtrl: NavController) { }
 
   show(cat) {
     console.log('push to cat:', cat);
-    this.navCtrl.push(CatPage, {cat: cat});
+    this.navCtrl.push(CatPage, {cat: cat})
+      .then(_ => console.log(_))
+      .catch(e => console.log(e));
   }
 
   get nbCats() {
@@ -44,6 +44,22 @@ export class AvatarPage {
 
   get loaded() {
     return AvatarPage.loaded;
+  }
+
+  get hat() {
+    return (PersoComponent.hat == undefined)? this.cats.get(1).img: PersoComponent.hat;
+  }
+  get hair() {
+    return (PersoComponent.hair == undefined)? this.cats.get(2).img: PersoComponent.hair;
+  }
+  get face() {
+    return (PersoComponent.face == undefined)? this.cats.get(3).img: PersoComponent.face;
+  }
+  get top() {
+    return (PersoComponent.top == undefined)? this.cats.get(4).img: PersoComponent.top;
+  }
+  get bottom() {
+    return (PersoComponent.bottom == undefined)? this.cats.get(5).img: PersoComponent.bottom;
   }
 
 }

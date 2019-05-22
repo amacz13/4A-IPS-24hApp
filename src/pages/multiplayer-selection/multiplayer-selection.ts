@@ -25,7 +25,7 @@ export class MultiplayerSelectionPage {
     if (!this.invited) this.toastCtrl.create({
       message: 'Le joueur a bien été invité !',
       duration: 5000,
-      position: 'bottom'
+      position: '_bottom'
     }).present();
     this.invited = !this.invited;
   }

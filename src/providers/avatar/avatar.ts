@@ -19,7 +19,8 @@ export class AvatarProvider {
       .then(list => {
         let i = 0
         return this.loadCat(i, list);
-      });
+      })
+      .catch(e => console.log(e));
   }
 
   private loadCat(i, list) {
@@ -38,32 +39,12 @@ export class AvatarProvider {
               resolve(true);
             }
           })
-          .then(_ =>{if (_) resolve(true)});
+          .then(_ =>{if (_) resolve(true)})
+          .catch(e => console.log(e));
       }
       return true;
     })
   }
-
-  // loadData() {
-  //   this.platform.ready().then(() => {
-  //     this.file.listDir(this.file.applicationDirectory, "www/assets/imgs/avatar/")
-  //       .then(list => {
-  //         let i=1;
-  //         for (let f of list) {
-  //           if (f.isDirectory) {
-  //             this._nbCats.push(i);
-  //             i++;
-  //             this.file.listDir(this.file.applicationDirectory, "www/assets/imgs/avatar/"+f.name)
-  //               .then(res => {
-  //                 this._cats.set(Number(f.name.charAt(0)),{cat: f.name, isNew: true, img: res[0].fullPath.substring(4)});
-  //               })
-  //               .catch(e => console.log(e));
-  //           }
-  //         }
-  //       })
-  //       .catch(e => console.log(e))
-  //   });
-  // }
 
   get nbCats(): any[] {
     return this._nbCats;

@@ -16,14 +16,11 @@ import {AvatarProgressPage} from '../avatar-progress/avatar-progress';
 })
 export class ResultsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ResultsPage');
+  constructor(public navCtrl: NavController) {
   }
 
   goToProgress() {
-    this.navCtrl.push(AvatarProgressPage);
+    this.navCtrl.push(AvatarProgressPage)
+      .catch(e => console.log(e));
   }
 }

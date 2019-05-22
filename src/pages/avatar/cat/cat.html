@@ -1,8 +1,9 @@
 <ion-content padding>
   <ion-row>
-    <ion-col>
+    <ion-col ion-scroll scrollX="true">
       <button ion-button
               *ngFor="let e of elements"
+              (click)="choose(e.img)"
               color="light">
         <img [src]="e.img" width="64">
         <div class="blue-corner" *ngIf="e.new"></div>
@@ -10,6 +11,7 @@
     </ion-col>
 
     <ion-col>
+      <perso-component></perso-component>
     </ion-col>
   </ion-row>
 </ion-content>

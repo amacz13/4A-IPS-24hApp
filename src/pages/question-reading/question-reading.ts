@@ -20,9 +20,4 @@ export class QuestionReadingPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public platform: Platform) {
     this.question = navParams.get("question");
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad QuestionReadingPage');
-  }
-
 }

@@ -1,9 +1,18 @@
 <div class="perso">
-  <img [src]="hat" width="100px">
-  <div class="head">
-    <img [src]="hair" class="hair" width="100px">
-    <img [src]="face" class="face" width="100px">
+  <div class="imgs">
+    <img [src]="hat" height="100px">
+    <div class="head">
+      <img [src]="hair" class="hair" height="100px">
+      <img [src]="face" class="face" height="100px">
+    </div>
+    <img [src]="top" height="100px">
+    <img [src]="bottom" height="100px">
   </div>
-  <img [src]="top" width="100px">
-  <img [src]="bottom" width="100px">
+
+  <div class="input">
+    <ion-input placeholder="Name" [(ngModel)]="name"></ion-input>
+    <button ion-button clear (click)="alea()">
+      <ion-icon name="shuffle"></ion-icon>
+    </button>
+  </div>
 </div>

@@ -18,7 +18,6 @@ import {ResultsPage} from '../pages/results/results';
 import {GameFlow} from "../logic/game-flow";
 import {CatPage} from "../pages/avatar/cat/cat";
 import {File} from "@ionic-native/file";
-import {PersoComponent} from "../components/perso/perso";
 import { AvatarProvider } from '../providers/avatar/avatar';
 import {AvatarProgressPage} from '../pages/avatar-progress/avatar-progress';
 import {ShowAnswerPage} from '../pages/show-answer/show-answer';

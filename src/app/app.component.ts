@@ -10,8 +10,8 @@ import { HomePage } from '../pages/home/home';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  //TODO: Uncomment following line
-  rootPage:any = HomePage;
+  //TODO: Change following line
+  rootPage:any = AvatarPage;
 
   constructor(platform: Platform,
               statusBar: StatusBar,
@@ -21,16 +21,20 @@ export class MyApp {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       //statusBar.styleDefault();
+      // splashScreen.hide()
+
       avatar.loadData()
         .then(() => {
-          splashScreen.hide()
+          splashScreen.hide();
           avatar.ready = true;
           AvatarPage.cats = avatar.cats;
           AvatarPage.nbCats = avatar.nbCats;
           AvatarPage.loaded = true;
-        });
+        })
+        .catch(e => console.log(e));
 
-    });
+    })
+      .catch(e => console.log(e));
   }
 }
 
