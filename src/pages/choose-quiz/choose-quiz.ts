@@ -5,6 +5,7 @@ import {QuestionAnswerPage} from '../question-answer/question-answer';
 import {Question} from "../../logic/question";
 import {GameFlow} from "../../logic/game-flow";
 import {AvatarProgressPage} from '../avatar-progress/avatar-progress';
+import {ScoreCounter} from "../../logic/score-counter";
 
 /**
  * Generated class for the ChooseQuizPage page.
@@ -20,7 +21,7 @@ import {AvatarProgressPage} from '../avatar-progress/avatar-progress';
 })
 export class ChooseQuizPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public game: GameFlow) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public game: GameFlow, public score: ScoreCounter) {
   }
 
   ionViewDidLoad() {
@@ -33,6 +34,7 @@ export class ChooseQuizPage {
 
   goToQuestion() {
     const question: Question = this.game.start();
+    this.score.reset();
     setTimeout(() => this.navCtrl.push(QuestionAnswerPage, {
       question: question
     }), 3000);
@@ -43,6 +45,7 @@ export class ChooseQuizPage {
 
   randomQuiz() {
     const question: Question = this.game.start();
+    this.score.reset();
     setTimeout(() => this.navCtrl.push(QuestionAnswerPage, {
       question: question
     }), 3000);

@@ -94,7 +94,7 @@ export class GameFlow {
 
     new Question("Comment s’appelle la partie cachée d’internet ?",
       new Array<string>("Le Hidden Internet", "Le High Castle", "Le Deep Network"),
-      "Le Deep Network",
+      "Le Deep Web",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
 
     new Question("Quelle était la principale cause de bug de l’an 2000 ?",
@@ -220,12 +220,16 @@ export class GameFlow {
   }
 
   next() {
-    var randomIndex = Math.floor(Math.random() * this.quizzEnsim.length);
+
+    var randomIndex;
+
+    do {
+      randomIndex = Math.floor(Math.random() * this.quizzEnsim.length);
+    } while(this.questionsDone.indexOf(randomIndex) != -1);
 
     this.questionsDone.push(randomIndex);
 
-
-    if (this.questionsDone.length >= 10) {
+    if (this.questionsDone.length >= 11) {
       return 0;
     } else {
       return this.quizzInfo[randomIndex];

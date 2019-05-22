@@ -20,4 +20,10 @@ export class ScoreCounter {
   lose() {
     this.badAnswers++;
   }
+
+  reset() {
+    this.totalPoints = 0;
+    this.goodAnswers = 0;
+    this.badAnswers = 0;
+  }
 }

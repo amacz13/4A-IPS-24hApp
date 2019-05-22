@@ -7,7 +7,7 @@
       <ion-card>
         <ion-grid>
           <ion-row class="questioncount">
-            <span>{{game.indexQuizz + 1}} / {{game.quizzInfo.length}}</span>
+            <span>{{score.badAnswers + score.goodAnswers}} / {{10}}</span>
           </ion-row>
           <ion-row class="questContent">
             <h1>{{question.label}}</h1>

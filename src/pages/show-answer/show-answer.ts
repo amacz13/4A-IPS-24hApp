@@ -5,6 +5,7 @@ import {ResultsPage} from '../results/results';
 import {QuestionReadingPage} from '../question-reading/question-reading';
 import {GameFlow} from '../../logic/game-flow';
 import {QuestionAnswerPage} from '../question-answer/question-answer';
+import {ScoreCounter} from "../../logic/score-counter";
 
 @IonicPage()
 @Component({
@@ -16,7 +17,7 @@ export class ShowAnswerPage {
   private time: number = 5;
   private sec: string = "secondes";
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public game: GameFlow) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public game: GameFlow, public score: ScoreCounter) {
     this.question = navParams.get("question");
 
     this.nextQuestion();
