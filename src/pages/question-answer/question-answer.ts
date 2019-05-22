@@ -39,10 +39,10 @@ export class QuestionAnswerPage {
 
     for(let i = 0; i < 3; i++)
     {
-      this.answers.push(this.question.dummyReps[i]);
+      this.answers.push(this.question.badAnswers[i]);
     }
 
-    this.answers.push(this.question.good);
+    this.answers.push(this.question.goodAnswer);
 
     this.answers = this.shuffle(this.answers);
   }
@@ -101,7 +101,7 @@ export class QuestionAnswerPage {
     {
       this.answered = true;
       this.timer = 0;
-      if(answer === this.question.good)
+      if(answer === this.question.goodAnswer)
       {
         evt.srcElement.className = evt.srcElement.className + " goodAnswer";
       }

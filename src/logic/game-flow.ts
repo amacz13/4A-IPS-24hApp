@@ -93,7 +93,52 @@ export class GameFlow {
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
   ];
 
-  quizzEnsim: Array<Question> = [];
+  quizzEnsim: Array<Question> = [
+    new Question("Parmi les options suivantes laquelle n'est pas proposée à l'ENSIM ?",
+      new Array<string>("Interactions Personne-Système", "Vibration Acoustique", "Architecture des Systèmes Temps Réels Embarqués"),
+      "Intelligence Profonde Sectorisée",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+  new Question("Qui est le directeur de l'ENSIM ?",
+      new Array<string>("Axel Maczkowiak", "Pascal Leroux", "Didier Tassin"),
+      "Jean François Tassin",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+  new Question("Quelle solution n'est pas une voie d'accès directe à l'ENSIM en cycle ingénieur ?",
+      new Array<string>("DUT", "Khâgne-BL", "BTS"),
+      "Concours Geipi",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+  new Question("Le bâtiment de l'ENSIM",
+      new Array<string>("A été inauguré en 2002", "Était à l'origine une serre", "Était à l'origine un laboratoire"),
+      "A remporté un prix d'architecture",
+      ""),
+  new Question("Quelle association n'existe pas à l'ENSIM ?",
+      new Array<string>("Ensim'elec", "Le VASI", "La K'Verne"),
+      "Info Gras Fist",
+      ""),
+  new Question("L'ENSIM forme",
+      new Array<string>("Des développeurs web", "Des jardiniers", "Des commerciaux"),
+      "Des ingénieurs généralistes",
+      ""),
+  new Question("Quel nom porte le reseau des anciens de l'ENSIM ?",
+      new Array<string>("CUBE", "PYRAMIDE", "CYLINDRE"),
+      "SPHERE",
+      ""),
+  new Question("A quel évenement l'ENSIM n'est-elle pas associée ?",
+      new Array<string>("La Journée Agilemans", "La coupe de france de robotique", "Les 24h du code"),
+      "Le grand prix de france moto",
+      ""),
+  new Question("Que signifie l'accornyme ENSIM ?",
+      new Array<string>("Ecole Nationale Supérieur d'Informatique du Mans", "Établissement Nautique Surveillé Informatiquement du Mans", "Ecole Nationale Supérieure de l'Infrastructure Militaire"),
+      "Ecole Nationale Supérieur d'Ingénieur du Mans",
+      ""),
+  new Question("En quelle année a été fondée l’ENSIM ?",
+      new Array<string>("1985", "1997", "1993"),
+      "1995",
+      ""),
+  new Question("Quel est le slogan de l’ENSIM ?",
+      new Array<string>("Des infos… et des Vacs aussi !", "Être en phase avec votre développement", "Entrez dans un monde de plaisir"),
+      "Inventer le confort de demain",
+      ""),
+  ];
 
   indexQuizz: number;
 

@@ -1,6 +1,6 @@
 export class Question {
 
-  constructor(public label: string, public dummyReps: Array<string>, public good: string, public explanation: string) {
+  constructor(public label: string, public badAnswers: Array<string>, public goodAnswer: string, public explanation: string) {
 
   }
 }
