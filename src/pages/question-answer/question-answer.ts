@@ -43,7 +43,7 @@ export class QuestionAnswerPage {
 
     this.answers.push(this.question.good);
 
-    this.answers = this.shuffle(this.answers);
+    this.answers = QuestionAnswerPage.shuffle(this.answers);
   }
 
   ionViewDidLoad() {
@@ -57,11 +57,11 @@ export class QuestionAnswerPage {
       if(this.maxTime <= 0) {
         this.maxTime = 0;
       } else {
-        if (this.maxTime <= 1000) this.color = "#EBEB28";
-        if (this.maxTime <= 500) this.color = "#FF1A00";
+        if (this.maxTime <= 10) this.color = "#EBEB28";
+        if (this.maxTime <= 5) this.color = "#FF1A00";
         this.marginPercent = ((2000-this.maxTime)/4000)*100 + "%";
         this.timePercent = (this.maxTime/2000)*100 + "%";
-        console.log("Timer : "+this.timePercent);
+        console.log("Timer : " + this.timePercent);
         this.maxTime -= 1;
         this.StartTimer();
       }
@@ -70,15 +70,7 @@ export class QuestionAnswerPage {
 
   }
 
-  goToResults() {
-    //this.navCtrl.push(ResultsPage )
-  }
-
-  getAnswers() {
-
-  }
-
-  shuffle(array: any) {
+  static shuffle(array: any) {
     var m = array.length, t, i;
 
     // While there remain elements to shuffle
@@ -98,6 +90,8 @@ export class QuestionAnswerPage {
   checkAnswer(answer: string, evt: MouseEvent) {
     if(!this.answered)
     {
+      this.maxTime = 0;
+
       this.answered = true;
       if(answer === this.question.good)
       {
@@ -110,6 +104,7 @@ export class QuestionAnswerPage {
       const question: any = this.game.next();
 
       setTimeout(() => {
+
         if(question == 0)
         {
           this.navCtrl.push(ResultsPage);
