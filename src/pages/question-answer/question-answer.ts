@@ -57,6 +57,9 @@ export class QuestionAnswerPage {
     {
       if(this.maxTime <= 0) {
         this.maxTime = 0;
+        this.navCtrl.push(ShowAnswerPage, {
+          question: this.question
+        });
       } else {
         if (this.maxTime <= 1000) this.color = "#EBEB28";
         if (this.maxTime <= 500) this.color = "#FF1A00";
@@ -100,7 +103,7 @@ export class QuestionAnswerPage {
     if(!this.answered)
     {
       this.answered = true;
-      this.timer = 0;
+
       if(answer === this.question.good)
       {
         evt.srcElement.className = evt.srcElement.className + " goodAnswer";
@@ -109,9 +112,13 @@ export class QuestionAnswerPage {
         evt.srcElement.className = evt.srcElement.className + " badAnswer";
       }
 
-      setTimeout(() => this.navCtrl.push(ShowAnswerPage, {
+      setTimeout(() => {
+        this.timer = 0;
+      }, 1000);
+
+      /*setTimeout(() => this.navCtrl.push(ShowAnswerPage, {
         question: this.question
-      }), 1000);
+      }), 1000);*/
     }
   }
 }

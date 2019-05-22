@@ -2,15 +2,6 @@ import {Component, Input} from '@angular/core';
 import {IonicPage, NavController} from "ionic-angular";
 import {AvatarPage} from "../../pages/avatar/avatar";
 
-/**
- * Generated class for the AccessoryComponent component.
- *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
- */
-@IonicPage({
-  name: 'page-accessory'
-})
 @Component({
   selector: 'accessory',
   templateUrl: 'accessory.html'
