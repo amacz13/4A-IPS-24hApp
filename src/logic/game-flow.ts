@@ -5,7 +5,7 @@ import {Question} from "./question";
 @Injectable()
 export class GameFlow {
 
-  quizz: Array<Question> = [
+  quizzInfo: Array<Question> = [
     new Question(
       "A l’occasion de quel événement majeur Alan Turing a-t-il inventé “The Bomb” ?",
       new Array<string>("La bataille de Woodstock", "La première guerre mondiale", "La guerre froide"),
@@ -204,23 +204,31 @@ export class GameFlow {
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
   ];
 
-  indexQuizz: number;
+  questionsDone: Array<number>;
 
   constructor() {
   }
 
   start() {
-    this.indexQuizz = 0;
-    return this.quizz[this.indexQuizz];
+    this.questionsDone = new Array<number>();
+
+    var randomIndex = Math.floor(Math.random() * this.quizzEnsim.length);
+
+    this.questionsDone.push(randomIndex);
+
+    return this.quizzInfo[randomIndex];
   }
 
   next() {
-    this.indexQuizz++;
+    var randomIndex = Math.floor(Math.random() * this.quizzEnsim.length);
 
-    if (this.indexQuizz >= this.quizz.length) {
+    this.questionsDone.push(randomIndex);
+
+
+    if (this.questionsDone.length >= 10) {
       return 0;
     } else {
-      return this.quizz[this.indexQuizz];
+      return this.quizzInfo[randomIndex];
     }
   }
 }

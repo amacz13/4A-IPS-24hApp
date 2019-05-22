@@ -7,7 +7,7 @@
       <ion-card>
         <ion-grid>
           <ion-row class="questioncount">
-            <span>{{game.indexQuizz + 1}} / {{game.quizz.length}}</span>
+            <span>{{game.indexQuizz + 1}} / {{game.quizzInfo.length}}</span>
           </ion-row>
           <ion-row class="questContent">
             <h1>{{question.label}}</h1>
@@ -20,7 +20,7 @@
     <ion-row class="answer">
       <ion-grid class="answergrid">
         <ion-row class="btns">
-          <ion-card *ngFor="let answer of answers" class="answerbtn" (click)="checkAnswer(answer, $event)">
+          <ion-card #answerCard *ngFor="let answer of answers" class="answerbtn" (click)="checkAnswer(answer, $event)">
             <h3 style="pointer-events: none">{{answer}}</h3>
           </ion-card>
         </ion-row>

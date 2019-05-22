@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, ElementRef, QueryList, Renderer2, ViewChild, ViewChildren} from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {ScoreCounter} from "../../logic/score-counter";
 import {Question} from "../../logic/question";
@@ -24,6 +24,9 @@ export class QuestionAnswerPage {
   private rand: number;
   private answers: Array<string>;
   private answered: boolean = false;
+  private answeredCorrectly: boolean = false;
+
+  @ViewChildren('answerCard') answerCards: QueryList<ElementRef>;
 
   private timer:any;
   private maxTime:number = 2000;
@@ -31,7 +34,7 @@ export class QuestionAnswerPage {
   private marginPercent: string = "0%";
   private color:string = "#28EB7D";
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public game: GameFlow, public score: ScoreCounter) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public game: GameFlow, public score: ScoreCounter, private renderer: Renderer2) {
     this.question = navParams.get("question");
     this.rand = Math.floor(Math.random()*4);
 
@@ -55,11 +58,29 @@ export class QuestionAnswerPage {
   StartTimer(){
     this.timer = setTimeout(x =>
     {
-      if(this.maxTime <= 0 || this.answered) {
+      if(this.answered || this.maxTime <= 0) {
+
+        if(this.answeredCorrectly)
+        {
+          this.score.win(this.maxTime);
+        } else {
+          this.score.lose();
+        }
+
         this.maxTime = 0;
-        this.navCtrl.push(ShowAnswerPage, {
+
+        for(let ref of this.answerCards.toArray())
+        {
+          if(ref.nativeElement.innerText === this.question.goodAnswer)
+          {
+            this.renderer.addClass(ref.nativeElement, "goodAnswer");
+          }
+        }
+
+        setTimeout(() => this.navCtrl.push(ShowAnswerPage, {
           question: this.question
-        });
+        }), 1000);
+
       } else {
         if (this.maxTime <= 1000) this.color = "#EBEB28";
         if (this.maxTime <= 500) this.color = "#FF1A00";
@@ -103,16 +124,16 @@ export class QuestionAnswerPage {
     if(!this.answered)
     {
 
+      this.answered = true;
+
       if(answer === this.question.goodAnswer)
       {
         evt.srcElement.className = evt.srcElement.className + " goodAnswer";
+        this.answeredCorrectly = true;
       }
       else {
         evt.srcElement.className = evt.srcElement.className + " badAnswer";
       }
-
-
-      setTimeout(() => this.answered = true, 1000);
 
 
       /*setTimeout(() => this.navCtrl.push(ShowAnswerPage, {

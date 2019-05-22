@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {AvatarProgressPage} from '../avatar-progress/avatar-progress';
+import {ScoreCounter} from "../../logic/score-counter";
 
 /**
  * Generated class for the ResultsPage page.
@@ -16,7 +17,7 @@ import {AvatarProgressPage} from '../avatar-progress/avatar-progress';
 })
 export class ResultsPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private score: ScoreCounter) {
   }
 
   goToProgress() {

@@ -4,17 +4,20 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class ScoreCounter {
 
-  private point = 0;
+  public totalPoints = 0;
+  public goodAnswers = 0;
+  public badAnswers = 0;
 
   constructor() {
 
   }
 
-  win() {
-    this.point++;
+  win(winPoints: number) {
+    this.totalPoints += winPoints;
+    this.goodAnswers++;
   }
 
-  log(){
-    console.log(this.point);
+  lose() {
+    this.badAnswers++;
   }
 }
