@@ -6,7 +6,7 @@
               (click)="show(cats.get(i).cat)"
               color="light">
         <img [src]="cats.get(i).img" width="64">
-        <div class="blue-corner" *ngIf="this.cats.get(i).isNew"></div>
+        <div class="blue-corner" *ngIf="cats.get(i).isNew"></div>
       </button>
     </ion-col>
 

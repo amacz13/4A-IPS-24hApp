@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {IonicPage, NavController} from 'ionic-angular';
+import {IonicPage, NavController, NavOptions} from 'ionic-angular';
 import {CatPage} from "./cat/cat";
 import {PersoComponent} from "../../components/perso/perso";
 
@@ -25,7 +25,7 @@ export class AvatarPage {
 
   names = ['Fred', 'Bubulle', 'Gitoune'];
 
-  constructor(public navCtrl: NavController) { }
+  constructor(public navCtrl: NavController) {}
 
   show(cat) {
     console.log('push to cat:', cat);

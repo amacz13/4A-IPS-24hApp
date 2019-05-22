@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {IonicPage, NavController, NavParams, Platform} from 'ionic-angular';
+import {IonicPage, NavController, NavOptions, NavParams, Platform} from 'ionic-angular';
 import {File} from '@ionic-native/file';
 import {AvatarPage} from "../avatar";
 import {PersoComponent} from "../../../components/perso/perso";
@@ -11,7 +11,9 @@ import {PersoComponent} from "../../../components/perso/perso";
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage({
+  name: 'page-cat'
+})
 @Component({
   selector: 'page-cat',
   templateUrl: 'cat.html',
@@ -41,7 +43,6 @@ export class CatPage {
   }
 
   choose(img) {
-    console.log('push img:', img);
     if (this.cat.includes('hat')) {
       PersoComponent.hat = img;
     }

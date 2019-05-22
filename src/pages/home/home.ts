@@ -15,6 +15,9 @@ export class HomePage {
         break;
       case "QuestionAnswerPage":
         break;
+      case "CatComponent":
+        this.navCtrl.pop({animate: false})
+          .catch(e => console.log(e));
       default:
         this.navCtrl.pop()
           .catch(e => console.log(e));
