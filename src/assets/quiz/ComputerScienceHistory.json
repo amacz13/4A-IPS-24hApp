@@ -1,0 +1,208 @@
+{
+  "id": 0,
+  "title": "Histoire de l'Informatique",
+  "type": "solo",
+  "questions": [
+    {
+      "label": "A l’occasion de quel événement majeur Alan Turing a-t-il inventé “The Bomb” ?",
+      "goodAnswer": "La seconde guerre mondiale",
+      "badAnswers": [
+        "La bataille de Woodstock",
+        "La première guerre mondiale",
+        "La guerre froide"
+      ],
+      "explanation": "Cette machine a permis de décrypter les communications allemandes pendant la seconde guerre mondiale qui étaient chiffrées avec la fameuse machine Enigma."
+    },
+    {
+      "label": "Quelle lettre se trouve après le Y sur un clavier AZERTY ?",
+      "goodAnswer": "U",
+      "badAnswers": [
+        "H",
+        "W",
+        "Z"
+      ],
+      "explanation": "C’est aussi le U qui se trouve après le Y sur un clavier QWERTY."
+    },
+    {
+      "label": "Combien de transistors possédait le premier microcontrôleur Intel 4004 ?",
+      "goodAnswer": "2300",
+      "badAnswers": [
+        "2100",
+        "2200",
+        "2400"
+      ],
+      "explanation": "L’Intel 4004 était moins puissant que les contrôleurs des mini-ordinateurs de la même époque, mais sa taille permettait d’envisager la construction de micro-ordinateurs."
+    },
+    {
+      "label": "Parmis les inventions suivantes, laquelle a été inventée avant le World Wide Web ?",
+      "goodAnswer": "La boite mail",
+      "badAnswers": [
+        "Les réseaux sociaux",
+        "L'HTML",
+        "L'iPhone"
+      ],
+      "explanation": "Le premier mail a été envoyé en 1971, la version initiale d’HTML date de 1993, le premier réseau social est apparu en 1995 et l’iPhone n’a vu le jour qu’en 2007."
+    },
+    {
+      "label": "Le Python est un langage...",
+      "goodAnswer": "Interprété",
+      "badAnswers": [
+        "Relou",
+        "Non ponctué",
+        "Compilé"
+      ],
+      "explanation": "Les langages interprétés sont analysés et traduits par un programme interprète à chaque exécution du programme, contrairement aux langages compilés qui peuvent être analysés une seule fois puis exécutés un nombre illimité de fois."
+    },
+    {
+      "label": "Quel était le poids du premier ordinateur ENIAC ?",
+      "goodAnswer": "27 tonnes",
+      "badAnswers": [
+        "10 tonnes",
+        "45 kilos",
+        "5630 grammes"
+      ],
+      "explanation": "En plus d’être très lourd, l’ENIAC était massif, occupant une surface d’environ 167m²."
+    },
+    {
+      "label": "Si HDD veut dire Hard Disk Drive, que signifie SSD ?",
+      "goodAnswer": "Solid State Drive",
+      "badAnswers": [
+        "Super Speed Disk",
+        "Super Sonic Drive",
+        "Sweet Soft Disk"
+      ],
+      "explanation": "Généralement, les SSD offrent un accès aux données beaucoup plus rapide que les HDD, mais ces dernier peuvent stocker davantage de données à moindre coût."
+    },
+    {
+      "label": "Quel iPhone n'a jamais existé ?",
+      "goodAnswer": "l'iPhone 2",
+      "badAnswers": [
+        "l'iPhone",
+        "l'iPhone 3",
+        "l'iPhone X"
+      ],
+      "explanation": "L'Iphone 3 est nommé ainsi car il est compatible avec la norme 3G, la compatibilité avec la norme 2G était présente dès le premier Iphone. L'Iphone X représente le dixième anniversaire de l'Iphone."
+    },
+    {
+      "label": "De quel matériau était composée la première souris ?",
+      "goodAnswer": "De bois",
+      "badAnswers": [
+        "D'aluminium",
+        "De plastique",
+        "De chair"
+      ],
+      "explanation": "La souris a été inventée en 1963 par Douglas Engelbart du Stanford Research Institute et présentée au public en 1968.  Elle a été améliorée par Jean-Daniel Nicoud à l'EPFL dès 1979 grâce à l'ajout d'une boule et de capteurs, il fabriqua la souris Depraz qui fut à l'origine de l'entreprise Logitech."
+    },
+    {
+      "label": "Après quoi sont nommées les différentes versions d’Android ?",
+      "goodAnswer": "Des noms de gâteaux",
+      "badAnswers": [
+        "Des grands noms de l’Informatique",
+        "Des noms de fleurs",
+        "Des groupes musicaux"
+      ],
+      "explanation": "Cupcake, donut, éclair, kitkat, nougat, oreo, pie par exemples."
+    },
+    {
+      "label": "Quel était le nom original de Windows",
+      "goodAnswer": "Interface Manager",
+      "badAnswers": [
+        "Gates Software",
+        "Debian",
+        "Macintosh"
+      ],
+      "explanation": "Windows 1.0 lancé en 1985 créé par Bill Gates avait pour nom de code Interface Manager. Debian est un système d'exploitation équipant notamment la ville de Munich. Macintosh est une série de différentes famille d'ordinateur de l'entreprise Apple."
+    },
+    {
+      "label": "Que signifie le C de CAPTCHA",
+      "goodAnswer": "Completely",
+      "badAnswers": [
+        "Control",
+        "Capacity",
+        "Casual"
+      ],
+      "explanation": "CAPTCHA signifie Completely Automated Public Turing test to Tell Computers and Humans Apart (« test public de Turing complètement automatique ayant pour but de différencier les humains des ordinateurs »)."
+    },
+    {
+      "label": "En quelle année Sir Tim Berners-Lee a-t-il inventé le World Wide Web ?",
+      "goodAnswer": "1989",
+      "badAnswers": [
+        "1998",
+        "1899",
+        "1988"
+      ],
+      "explanation": "Le Web n’est qu’une des applications d’Internet, distincte d’autres applications comme le courrier électronique, la messagerie instantanée et le partage de fichiers en pair à pair. Le Web a été inventé au CERN à Genève par Tim Berners-Lee plusieurs années après Internet. C'est également le Web qui a rendu les médias grand public attentifs à Internet."
+    },
+    {
+      "label": "Quel mot-valise est utilisé en tant que terme officiel pour désigner un smartphone en France ?",
+      "goodAnswer": "Ordiphone",
+      "badAnswers": [
+        "Intelliphone",
+        "Télénateur",
+        "Intelliport"
+      ],
+      "explanation": "Contraction de téléphone et ordinateur, le mot met en avant la puissance des machines actuelles."
+    },
+    {
+      "label": "Au moment de la création de cette application, quelle portion de la population mondiale avait accès à Internet ?",
+      "goodAnswer": "1/2",
+      "badAnswers": [
+        "1/4",
+        "5/6",
+        "1/3"
+      ],
+      "explanation": "Le nombre d’internautes dans le monde a dépassé les 4 milliards, et les ¾ d’entre eux utilisent les réseaux sociaux."
+    },
+    {
+      "label": "En quelle année est apparue la première bannière de publicité sur internet ?",
+      "goodAnswer": "1994",
+      "badAnswers": [
+        "1986",
+        "2000",
+        "2003"
+      ],
+      "explanation": "Cette publicité est apparue sur le site Web HotWired.com, devenu depuis Wired.com. Elle a été réalisée pour l’opérateur téléphonique américain AT&T."
+    },
+    {
+      "label": "Quel objet a été le premier à etre mis en vente et acheté sur internet ?",
+      "goodAnswer": "Un sac de Marijuana",
+      "badAnswers": [
+        "Une télécommande",
+        "Une boite de chaussette",
+        "Un ordinateur"
+      ],
+      "explanation": "Entre 1971 et 1972 un trafic de marijuana s'est organisé entre Stanford University et le MIT via arpanet."
+    },
+    {
+      "label": "Comment s’appelle la partie cachée d’internet ?",
+      "goodAnswer": "Le Dark Net",
+      "badAnswers": [
+        "Le Hidden Internet",
+        "Le High Castle",
+        "Le Deep Network"
+      ],
+      "explanation": "Le Dark Net représente toutes les pages internet qui ne sont pas référencées (et donc pas accessibles) par un moteur de recherche classique."
+    },
+    {
+      "label": "Quelle était la principale cause de bug de l’an 2000 ?",
+      "goodAnswer": "Les formats des dates",
+      "badAnswers": [
+        "Les insectes",
+        "Les pannes de courant",
+        "L'obsolescence programmée"
+      ],
+      "explanation": "Dans de nombreux programmes et beaucoup de bases de données, il manquait les deux chiffres 19 correspondant au siècle, l'année 2000 était donc du point de vue informatique la même que l'année 1900."
+    },
+    {
+      "label": "Quels sont les principaux éléments composant un code HTML ?",
+      "goodAnswer": "Des balises",
+      "badAnswers": [
+        "Des poteaux",
+        "Des panneaux",
+        "Des classes"
+      ],
+      "explanation": "Un document HTML est un fichier texte qui contient des balises (ou tag en anglais). Les balises indiquent au navigateur comment afficher le document."
+    }
+  ]
+}
+

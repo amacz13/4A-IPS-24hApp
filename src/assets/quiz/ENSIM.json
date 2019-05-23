@@ -1,0 +1,107 @@
+{
+  "id": 1,
+  "title": "ENSIM",
+  "type": "solo",
+  "questions": [
+    {
+      "label": "Parmi les options suivantes laquelle n'est pas proposée à l'ENSIM ?",
+      "goodAnswer": "Intelligence Profonde Sectorisée",
+      "badAnswers": [
+        "Interactions Personne-Système", "Vibration Acoustique", "Architecture des Systèmes Temps Réels Embarqués"
+      ],
+      "explanation": "L'Intelligence Profonde Sectorisée ne fait pas partie des 4 spécialités de l’ENSIM : \n Vibrations, Acoustique (VA) \n Capteurs et Instrumentation (C&I)\n Architecture des Systèmes Temps Réel et Embarqués (ASTRE)\n Interaction Personnes Systèmes (IPS)\n"
+    },
+    {
+      "label": "Qui est le directeur de l'ENSIM ?",
+      "goodAnswer": "Jean François Tassin",
+      "badAnswers": [
+        "Yannick Lebras", "Pascal Leroux", "Didier Tassin"
+      ],
+      "explanation": "Jean François Tassin dirige l'ENSIM depuis 2017. Pascal Leroux l'a dirigé de 2007 à 2017."
+    },
+    {
+      "label": "Quelle solution n'est pas une voie d'accès directe à l'ENSIM en cycle ingénieur ?",
+      "goodAnswer": "Concours Geipi",
+      "badAnswers": [
+        "DUT", "Khâgne-BL", "BTS"
+      ],
+      "explanation": "Le concours Geipi ne permet pas d’accéder directement au cycle ingénieur (BAC+2). Il permet d'accéder au cycle préparatoire (après le bac)."
+    },
+    {
+      "label": "Parmis les éléments suivants lequel a été récompensé ?",
+      "goodAnswer": "Le batiment de l’ENSIM",
+      "badAnswers": [
+        "La salle blanche de l'ENSIM", "La thermique du batiment de l'ENSIM", "Les salles de TP de l'ENSIM"
+      ],
+      "explanation": "La bâtiment créé par Christian Hauvette, a été lauréat du Grand Prix national d’architecture et inauguré en décembre 1997."
+    },
+    {
+      "label": "Quelle association n'existe pas à l'ENSIM ?",
+      "goodAnswer": "Vibr’ENSIM",
+      "badAnswers": [
+        "Ensim'elec", "Le VASI", "La K'Verne"
+      ],
+      "explanation": "Ensim'elec, le VASI, et La K'Verne sont des associations, ou club toujours en activité à l'ENSIM. La Vibr'ENSIM n'a jamais existée."
+    },
+    {
+      "label": "Parmis les diplomes suivants lequel peut on obtenir à l'ENSIM ?",
+      "goodAnswer": "Un diplôme d’ingénieur généraliste",
+      "badAnswers": [
+        "Un diplôme de développeur web", "Un diplôme de jardinier", "Un diplôme de commercial"
+      ],
+      "explanation": "L’École nationale supérieure d’ingénieurs du Mans (ENSIM) est l'une des 205 écoles d'ingénieurs françaises accréditées au 1er septembre 2018 à délivrer un diplôme d'ingénieur."
+    },
+    {
+      "label": "Quel nom porte le reseau des anciens de l'ENSIM ?",
+      "goodAnswer": "SPHERE",
+      "badAnswers": [
+        "CUBE",
+        "PYRAMIDE",
+        "CYLINDRE"
+      ],
+      "explanation": "Sphère est une association regroupant des anciens étudiants de l’école. Cette association organise notamment la journée des Anciens."
+    },
+    {
+      "label": "",
+      "goodAnswer": "",
+      "badAnswers": [
+        "",
+        "",
+        ""
+      ],
+      "explanation": ""
+    },
+    {
+      "label": "",
+      "goodAnswer": "",
+      "badAnswers": [
+        "",
+        "",
+        ""
+      ],
+      "explanation": ""
+    },
+    {
+      "label": "",
+      "goodAnswer": "",
+      "badAnswers": [
+        "",
+        "",
+        ""
+      ],
+      "explanation": ""
+    },
+    {
+      "label": "",
+      "goodAnswer": "",
+      "badAnswers": [
+        "",
+        "",
+        ""
+      ],
+      "explanation": ""
+    },
+
+  ]
+}
+

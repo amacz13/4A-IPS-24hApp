@@ -21,6 +21,7 @@ import {File} from "@ionic-native/file";
 import { AvatarProvider } from '../providers/avatar/avatar';
 import {AvatarProgressPage} from '../pages/avatar-progress/avatar-progress';
 import {ShowAnswerPage} from '../pages/show-answer/show-answer';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import {ShowAnswerPage} from '../pages/show-answer/show-answer';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpClientModule,
     ComponentsModule
   ],
   bootstrap: [IonicApp],
