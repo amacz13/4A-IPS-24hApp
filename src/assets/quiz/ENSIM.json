@@ -7,7 +7,9 @@
       "label": "Parmi les options suivantes laquelle n'est pas proposée à l'ENSIM ?",
       "goodAnswer": "Intelligence Profonde Sectorisée",
       "badAnswers": [
-        "Interactions Personne-Système", "Vibration Acoustique", "Architecture des Systèmes Temps Réels Embarqués"
+        "Interactions Personne-Système",
+        "Vibration Acoustique",
+        "Architecture des Systèmes Temps Réels Embarqués"
       ],
       "explanation": "L'Intelligence Profonde Sectorisée ne fait pas partie des 4 spécialités de l’ENSIM : \n Vibrations, Acoustique (VA) \n Capteurs et Instrumentation (C&I)\n Architecture des Systèmes Temps Réel et Embarqués (ASTRE)\n Interaction Personnes Systèmes (IPS)\n"
     },
@@ -15,7 +17,9 @@
       "label": "Qui est le directeur de l'ENSIM ?",
       "goodAnswer": "Jean François Tassin",
       "badAnswers": [
-        "Yannick Lebras", "Pascal Leroux", "Didier Tassin"
+        "Yannick Lebras",
+        "Pascal Leroux",
+        "Didier Tassin"
       ],
       "explanation": "Jean François Tassin dirige l'ENSIM depuis 2017. Pascal Leroux l'a dirigé de 2007 à 2017."
     },
@@ -23,7 +27,9 @@
       "label": "Quelle solution n'est pas une voie d'accès directe à l'ENSIM en cycle ingénieur ?",
       "goodAnswer": "Concours Geipi",
       "badAnswers": [
-        "DUT", "Khâgne-BL", "BTS"
+        "DUT",
+        "Khâgne-BL",
+        "BTS"
       ],
       "explanation": "Le concours Geipi ne permet pas d’accéder directement au cycle ingénieur (BAC+2). Il permet d'accéder au cycle préparatoire (après le bac)."
     },
@@ -31,7 +37,9 @@
       "label": "Parmis les éléments suivants lequel a été récompensé ?",
       "goodAnswer": "Le batiment de l’ENSIM",
       "badAnswers": [
-        "La salle blanche de l'ENSIM", "La thermique du batiment de l'ENSIM", "Les salles de TP de l'ENSIM"
+        "La salle blanche de l'ENSIM",
+        "La thermique du batiment de l'ENSIM",
+        "Les salles de TP de l'ENSIM"
       ],
       "explanation": "La bâtiment créé par Christian Hauvette, a été lauréat du Grand Prix national d’architecture et inauguré en décembre 1997."
     },
@@ -39,7 +47,9 @@
       "label": "Quelle association n'existe pas à l'ENSIM ?",
       "goodAnswer": "Vibr’ENSIM",
       "badAnswers": [
-        "Ensim'elec", "Le VASI", "La K'Verne"
+        "Ensim'elec",
+        "Le VASI",
+        "La K'Verne"
       ],
       "explanation": "Ensim'elec, le VASI, et La K'Verne sont des associations, ou club toujours en activité à l'ENSIM. La Vibr'ENSIM n'a jamais existée."
     },
@@ -47,7 +57,9 @@
       "label": "Parmis les diplomes suivants lequel peut on obtenir à l'ENSIM ?",
       "goodAnswer": "Un diplôme d’ingénieur généraliste",
       "badAnswers": [
-        "Un diplôme de développeur web", "Un diplôme de jardinier", "Un diplôme de commercial"
+        "Un diplôme de développeur web",
+        "Un diplôme de jardinier",
+        "Un diplôme de commercial"
       ],
       "explanation": "L’École nationale supérieure d’ingénieurs du Mans (ENSIM) est l'une des 205 écoles d'ingénieurs françaises accréditées au 1er septembre 2018 à délivrer un diplôme d'ingénieur."
     },
@@ -62,46 +74,85 @@
       "explanation": "Sphère est une association regroupant des anciens étudiants de l’école. Cette association organise notamment la journée des Anciens."
     },
     {
-      "label": "",
-      "goodAnswer": "",
+      "label": "A quel évenement l'ENSIM n'est-elle pas associée ?",
+      "goodAnswer": "Le grand prix de france moto",
       "badAnswers": [
-        "",
-        "",
-        ""
+        "La Journée Agilemans",
+        "La coupe de france de robotique",
+        "Les 24h du code"
       ],
-      "explanation": ""
+      "explanation": "L'ENSIM co-organise depuis leurs créations la journée Agilemans et les 24h du code. Elle participe également chaque année à la coupe de france de robotique."
     },
     {
-      "label": "",
-      "goodAnswer": "",
+      "label": "Que signifie l'accronyme ENSIM ?",
+      "goodAnswer": "Ecole Nationale Supérieur d'Ingénieur du Mans",
       "badAnswers": [
-        "",
-        "",
-        ""
+        "Ecole Nationale Supérieur d'Informatique du Mans",
+        "Établissement Nautique Surveillé Informatiquement du Mans",
+        "Ecole Nationale Supérieure de l'Infrastructure Militaire"
       ],
-      "explanation": ""
+      "explanation": "L’ENSIM peut aussi représenter : l’Ecole Nationale Supérieure de l'Infrastructure Militaire du ministère de la défense est basée à Anger (49), est liée à l'ENSAM."
     },
     {
-      "label": "",
-      "goodAnswer": "",
+      "label": "En quelle année a été fondée l’ENSIM ?",
+      "goodAnswer": "1995",
       "badAnswers": [
-        "",
-        "",
-        ""
+        "1985",
+        "1997",
+        "1993"
       ],
-      "explanation": ""
+      "explanation": "L’ENSIM a été fondée en 1995. En 1997 correspond à la prise de possession du bâtiment actuelle. Auparavant les cours se faisaient à l'IUT en section mesures physiques."
     },
     {
-      "label": "",
-      "goodAnswer": "",
+      "label": "Quel est le slogan de l’ENSIM ?",
+      "goodAnswer": "Inventer le confort de demain",
       "badAnswers": [
-        "",
-        "",
-        ""
+        "Des infos… et des Vacs aussi !",
+        "Être en phase avec votre développement",
+        "Entrez dans un monde de plaisir"
       ],
-      "explanation": ""
+      "explanation": "“Des infos… et des Vacs aussi !” est le slogan de l’Ensimien, le journal de l’école, “Entrez dans un monde de plaisir” est un ancien slogan de Jensim, la junior étudiante, tandis que “Être en phase avec votre développement” est tout simplement un slogan inventé."
     },
-
+    {
+      "label": "Quelle mission n'est pas celle d'un ingénieur en acoustique ?",
+      "goodAnswer": "S'occuper de la sonorisation de concerts",
+      "badAnswers": [
+        "Réaliser des mesure au sonomètre",
+        "Réaliser des études vibratoire",
+        "Utiliser ses connaissances en mécaniques des fluides"
+      ],
+      "explanation": "Le métier d'ingénieur son ne correspond pas à un diplôme d'ingénieur mais à différents niveau de responsabilité ayant des formations de bac +2 à bac +5."
+    },
+    {
+      "label": "À quelle période de l'année ont lieu les portes ouvertes de l’ENSIM ?",
+      "goodAnswer": "Janvier-Février",
+      "badAnswers": [
+        "Mars-Avril",
+        "Mai-Juin",
+        "Septembre-Octobre"
+      ],
+      "explanation": "La date des portes ouvertes de l'ENSIM correspond à celle des portes ouvertes de Le Mans Université qui est généralement durant la période Janvier-Février."
+    },
+    {
+      "label": "Quel est le taux d'embauche des diplomés de l'ENSIM 1 an après l’obtention du diplôme ?",
+      "goodAnswer": "100%",
+      "badAnswers": [
+        "95%",
+        "90%",
+        "85%"
+      ],
+      "explanation": "Près de 80 % des ingénieurs diplômés trouvent un emploi 6 mois après leur sortie de l’école et 100% d’entre eux occupe un emploi 1 an après."
+    },
+    {
+      "label": "Quelle construction trouve-t-on à l’arrière de l’ENSIM ?",
+      "goodAnswer": "Une éolienne",
+      "badAnswers": [
+        "Un bunker",
+        "Une statue du fondateur de l’école",
+        "Un champ de panneaux solaires"
+      ],
+      "explanation": "Cette éolienne dispose de nombreux capteurs dont les données peuvent être utilisées lors de projet étudiants."
+    }
   ]
 }
 
