@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "^3.2.3",
-    "tar": ">=4.4.2",
+    "tar": ">=4.4.18",
     "typescript": "~2.6.2"
   },
   "description": "An Ionic project",
